@@ -4,6 +4,16 @@
 
 $this->title = 'SEGOP';
 ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164319672-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164319672-1');
+</script>
+
     <section id="segv">
         <div class="row full-width-search">
             <div class="container clear-padding">

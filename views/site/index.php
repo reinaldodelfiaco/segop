@@ -176,15 +176,53 @@ $this->title = 'SEGOP';
     </section>
 
 
+    <section id="how-it-work">
+        <div class="row work-row">
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="section-title">
+                        <h2> Voe com SEGOP</h2>
+                        <h4 class=" ">Seus passageiros cobertos pela
+                            maior seguradora da América Latina</h4>
+                        <div class="space"></div>
+                        <p>
+                            - Ofereça novos produtos; <br>
+                            - Capture novos consumidores para aviação
+                            executiva;<br>
+                            - Desenvolva novos canais e estratégia de
+                            venda; <br>
+                            - Mapei a eslasticidade de demanda com um
+                            novo preço de final para o produto; <br>
+                            - Aumente os resultados da sua empresa!
+                        </p>
+                    </div>
+                <div></div>
+                <div class="text-center">
+                    <button href="https://www.embarquetec.com.br/sistema-integrado-de-seguros-aeronauticos/">Saiba mais</button>
+                    <button href="https://apihomologacao.travelace.com.br/index.html#/">Para desenvolvedores</button>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="/images/safe.jpg" alt="" 2w>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="ms">
         <div class="row choose-us-row">
             <div class="container clear-padding">
                 <div class="light-section-title text-center">
+                    <br></br>
+                    <br></br>
+                    <br></br>
                     <h2>Decole Seguro </h2>
                     <h4>Coberturas para você, sua aeronave e negócio em aviação</h4>
                     <div class="space"></div>
 
                 </div>
+                    <br></br>
                 <div class="col-md-3 col-sm-3">
                     <div class="choose-us-item text-center">
                         <h4>RETA</h4>
@@ -221,12 +259,15 @@ $this->title = 'SEGOP';
             </div>
         </div>
     </section>
-    <section id="how-it-work">
+   
+    <section id="about">
         <div class="row work-row">
             <div class="container">
                 <div class="col-md-6">
                     <div class="section-title">
-                        <h2> Voe com SEGOP</h2>
+                        <br></br>
+                        <br></br>
+                        <h2> Sobre</h2>
                         <h4 class=" ">Seus passageiros cobertos pela
                             maior seguradora da América Latina</h4>
                         <div class="space"></div>
@@ -243,17 +284,21 @@ $this->title = 'SEGOP';
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="/images/safe.jpg" alt="" 2w>
+                    <img src="/images/executivo.jpg" alt="" 2w>
                 </div>
 
             </div>
         </div>
     </section>
+
+
     <section id="contato" style="background-color: #444444">
         <div class="row">
             <div class="container clear-padding">
                 <div class="col-md-12 col-sm-12 contact-form">
                     <div class="section-title">
+                        <br></br>
+                        <br></br>
                         <h2 style="color: #fff">ENVIE SUA MENSAGEM</h2>
                         <form>
                             <div class="col-md-6 col-sm-6">

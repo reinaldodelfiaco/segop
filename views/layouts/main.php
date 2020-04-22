@@ -41,8 +41,8 @@ AppAsset::register($this);
                 <div class="col-md-5 col-sm-6 clear-padding ">
                     <div class="col-md-12 col-xs-7 clear-padding pull-right">
                         <div class="pull-right">
-                            <a href="#" class="transition-effect"><i class="fa fa-phone"></i> +55 00 0000-0000</a>
-                            <a href="#" class="transition-effect"><i class="fa fa-envelope-o"></i> support@email.com</a>
+                            <a href="#" class="transition-effect"><i class="fa fa-phone"></i> +55 62 3317-4712</a>
+                            <a href="#" class="transition-effect"><i class="fa fa-envelope-o"></i> comercial@segop.com.br</a>
                         </div>
                     </div>
                 </div>
@@ -83,10 +83,10 @@ AppAsset::register($this);
                                     <a href="#ms">MAIS SEGUROS</a>
                                 </li>
                                 <li>
-                                    <a href="/">SERVIÇOS AERONÁUTICOS</a>
+                                    <a href="https://www.embarquetec.com.br/">SERVIÇOS AERONÁUTICOS</a>
                                 </li>
                                 <li>
-                                    <a href="/">SOBRE</a>
+                                    <a href="#about">SOBRE</a>
                                 </li>
                                 <li>
                                     <a href="#contato">CONTATO</a>

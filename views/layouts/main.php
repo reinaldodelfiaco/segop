@@ -32,11 +32,9 @@ AppAsset::register($this);
         <div class="container clear-padding">
             <div class="navbar-contact">
                 <div class="col-md-7 col-sm-6 clear-padding">
-                    <a href="#" class="transition-effect"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="transition-effect"><i class="fa fa-instagram"></i></a>
-                    <a href="#" class="transition-effect"><i class="fa fa-linkedin"></i></a>
-                    <a href="#" class="transition-effect"><i class="fa fa-youtube"></i></a>
-                    <a href="#" class="transition-effect"><i class="fa fa-google"></i></a>
+                    <a href="https://www.facebook.com/Segop-Corretora-de-Seguros-da-Avia%C3%A7%C3%A3o-107455724279944" class="transition-effect"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/segopseguros/" class="transition-effect"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/segopseguros" class="transition-effect"><i class="fa fa-linkedin"></i></a>
                 </div>
                 <div class="col-md-5 col-sm-6 clear-padding ">
                     <div class="col-md-12 col-xs-7 clear-padding pull-right">

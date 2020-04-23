@@ -226,7 +226,6 @@ $this->title = 'SEGOP';
                 <div class="light-section-title text-center">
                     <br></br>
                     <br></br>
-                    <br></br>
                     <h2>Decole Seguro </h2>
                     <h4>Coberturas para você, sua aeronave e negócio em aviação</h4>
                     <div class="space"></div>
@@ -236,8 +235,7 @@ $this->title = 'SEGOP';
                 <div class="col-md-3 col-sm-3">
                     <div class="choose-us-item text-center">
                         <h4>RETA</h4>
-                        <p>Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.</p>
+                        <p>Garante proteção para passageiros, tripulantes e suas bagagens, bem como danos causados pela aeronave segurada a pessoas e bens de terceiros no solo.</p>
                         <a href="#">ORÇAMENTO</a>
                     </div>
                 </div>
@@ -291,12 +289,22 @@ $this->title = 'SEGOP';
                             novo preço de final para o produto; <br>
                             - Aumente os resultados da sua empresa!
                         </p>
+                        <div class="clearfix"></div>
+                            <div class="col-md-12 text-center we-accept">
+                                <h4>Seguradoras</h4>
+                                <ul>
+                                    <li><img src="/images/mastercard.png" alt="cruise"></li>
+                                    <li><img src="/images/visa.png" alt="cruise"></li>
+                                    <li><img src="/images/american-express.png" alt="cruise"></li>
+                                    <li><img src="/images/mastercard.png" alt="cruise"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/images/executivo.jpg" alt="" 2w>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="/images/executivo.jpg" alt="" 2w>
-                </div>
-
             </div>
         </div>
     </section>

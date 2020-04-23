@@ -71,7 +71,7 @@ $this->title = 'SEGOP';
                                         <label>Ida</label>
                                         <div class="input-group">
                                             <input type="text" id="departure_date" name="ida" class="form-control"
-                                                   placeholder="DD/MM/YYYY">
+                                                   placeholder="DD/MM/AAAA">
                                             <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
                                         </div>
                                     </div>
@@ -79,7 +79,7 @@ $this->title = 'SEGOP';
                                         <label>Volta</label>
                                         <div class="input-group">
                                             <input type="text" id="volta" class="form-control" name="return_date"
-                                                   placeholder="DD/MM/YYYY">
+                                                   placeholder="DD/MM/AAAA">
                                             <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
                                         </div>
                                     </div>

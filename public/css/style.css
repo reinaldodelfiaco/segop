@@ -157,7 +157,7 @@ h5 {
 	cursor: pointer;
 }
 #color-switcher .red {
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 }
 #color-switcher .green {
 	background: #009f8b;
@@ -282,7 +282,7 @@ h5 {
 	margin: 7px 0 0 15px;
 }
 .navbar-contact a i {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	margin-right: 5px;
 }
 .navbar-contact .form-control {
@@ -298,7 +298,7 @@ h5 {
 	background: #0A3152 none repeat scroll 0 0;
     border: medium none;
     border-radius: 0;
-    color: #f9676b;
+    color: rgb(8, 221, 8);
     padding: 0 10px 0 0;
 	margin-right: 15px;
 }
@@ -307,7 +307,7 @@ h5 {
     -moz-transition-property: color;
     -o-transition-property: color;
     transition-property: color;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .transparent-menu-top {
 	background: rgba(10, 49, 82, 0.8);
@@ -356,7 +356,7 @@ h5 {
 }
 .nav-container .mega-menu .desc h4 {
 	margin-top: 0px;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	font-weight: bold;
 }
 .nav-container .mega-menu .desc p {
@@ -366,7 +366,7 @@ h5 {
 }
 .nav-container .mega-menu .desc a {
 	color: #fff !important;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	border: 2px solid transparent;
 	padding: 8px 15px;
 	font-weight: bold;
@@ -376,8 +376,8 @@ h5 {
 	margin-left: 0px !important;
 }
 .nav-container .mega-menu .desc a:hover {
-	color: #f9676b;
-	border: 2px solid #f9676b;
+	color: rgb(8, 221, 8);
+	border: 2px solid rgb(8, 221, 8);
 	background: transparent;
 }
 .nav-container .mega-menu .links ul {
@@ -393,7 +393,7 @@ h5 {
 	margin-top: 0px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .nav-container .mega-menu .links li:before {
 	content: "\f105";
@@ -406,7 +406,7 @@ h5 {
 	color: #BEC4C8;
 }
 .mega-menu .links a:hover {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .mega-menu .links .img-div {
 	margin-top: 20px;
@@ -459,13 +459,13 @@ h5 {
 	-o-transition: all 0.3s ease;
 }
 .transparent-menu .navbar-nav > li > a:hover{
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .transparent-menu .navbar-default .navbar-nav > .active > a, 
 .transparent-menu .navbar-default .navbar-nav > .active > a:focus, 
 .transparent-menu .navbar-default .navbar-nav > .active > a:hover {
 	background: transparent;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .transparent-menu .dropdown-menu > li > a {
 	background: transparent none repeat scroll 0 0;
@@ -483,7 +483,7 @@ h5 {
 	margin-left: -10px;
 }
 .transparent-menu .dropdown-menu > li > a:hover {
-	color: #f9676b !important;
+	color: rgb(8, 221, 8) !important;
 }
 .transparent-menu .dropdown-menu {
 	background: #07253F;
@@ -668,7 +668,7 @@ h5 {
 	margin-left: -10px;
 }
 .light-menu .dropdown-menu > li > a:hover {
-	color: #f9676b !important;
+	color: rgb(8, 221, 8) !important;
 }
 .light-menu .dropdown-menu {
 	background: #07253F;
@@ -730,7 +730,7 @@ h5 {
 	position: relative;
 }
 .search-section .nav-tabs .active:after {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     content: "";
     height: 20px;
     left: 40%;
@@ -759,14 +759,14 @@ h5 {
 }
 .search-section .nav-tabs > li > a:hover {
 	color: #ffffff;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	border: 1px solid transparent;
 }
 .search-section .nav-tabs > li.active > a, 
 .search-section .nav-tabs > li.active > a:focus, 
 .search-section .nav-tabs > li.active > a:hover {
 	color: #ffffff;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	border: 1px solid transparent;
 }
 .search-section .tab-content {
@@ -819,7 +819,7 @@ h5 {
 	display: block;
 	font-weight: 800;
 	text-transform: uppercase;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .search-section .search-col-padding {
 	padding-top: 15px;
@@ -912,7 +912,7 @@ h5 {
 	color: #00ADEF;
 }
 .search-button {
-	background: #f9676b;
+	background: rgb(8, 221, 8);
     border-radius: 0;
     margin-top: 10px;
     padding: 10px 30px;
@@ -933,7 +933,7 @@ h5 {
 }
 .owl-theme .owl-dots .owl-dot.active span, 
 .owl-theme .owl-dots .owl-dot:hover span {
-	background: #f9676b !important;
+	background: rgb(8, 221, 8) !important;
 }
 .offer-slider {
 	margin-top: 200px;
@@ -955,7 +955,7 @@ h5 {
 }
 .offer-slider .item a:hover {
 	color: #fff;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	border: 2px solid transparent;
 }
 .offer-slider .owl-theme .owl-dots .owl-dot span {
@@ -992,7 +992,7 @@ h5 {
 }
 .bg-slider .carousel-caption a:hover {
 	color: #fff;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	border: 2px solid transparent;
 }
 .bg-slider .carousel-indicators {
@@ -1056,7 +1056,7 @@ h5 {
 	font-weight: bold;
 }
 .offer-box  a {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     color: #fff;
     display: inline-block;
     font-size: 12px;
@@ -1082,7 +1082,7 @@ h5 {
 	background: #fff;
 }
 .tran-search-box  .nav-tabs {
-	border-bottom: 4px solid #f9676b;
+	border-bottom: 4px solid rgb(8, 221, 8);
 }
 @media (max-width: 991px) {
 	.offer-slider,
@@ -1314,19 +1314,19 @@ h5 {
 .pricing-info span {
 	font-size: 16px;
 	font-weight: bold;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .pricing-info a {
 	color: #fff;
 	padding: 8px;
 	font-weight: bold;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	display: inline-block;
 	border: 2px solid transparent;
 }
 .pricing-info a:hover {
-	border: 2px solid #f9676b;
-	color: #f9676b;
+	border: 2px solid rgb(8, 221, 8);
+	color: rgb(8, 221, 8);
 	background: transparent;
 }
 .tooltip-left:before {
@@ -1528,7 +1528,7 @@ h5 {
 }
 .td-product .overlay a {	
 	text-align: center;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	color: #fff;
 	padding: 10px 20px;
 	font-weight: bold;
@@ -1547,8 +1547,8 @@ h5 {
 	transition: all 0.5s ease;
 }
 .td-product .overlay  a:hover {
-	border: 2px solid #f9676b;
-	color: #f9676b;
+	border: 2px solid rgb(8, 221, 8);
+	color: rgb(8, 221, 8);
 	background: transparent;
 }
 .td-product:hover .overlay {
@@ -1601,8 +1601,8 @@ h5 {
 	box-shadow: 0px 0px 5px #e6e6e6;
 }
 .room-grid-view:hover {
-	border: 1px solid #F19C4F;
-	box-shadow: 0px 0px 2px #F19C4F;
+	border: 1px solid rgb(8, 221, 8);
+	box-shadow: 0px 0px 2px rgb(8, 221, 8);
 }
 .room-grid-view  .room-info {
 	padding: 15px 15px 0px;
@@ -1612,7 +1612,7 @@ h5 {
 	font-weight: bold;
 }
 .room-grid-view  .room-info .room-title h5 span {
-	color: #F19C4F;
+	color: rgb(8, 221, 8);
 	margin: 5px 0px;
 }
 .room-grid-view  .room-info .room-title p {
@@ -1664,12 +1664,12 @@ h5 {
 	color: #ffffff;
 	display: block;
 	font-weight: bold;
-	background: #F2676B;
+	background: rgb(8, 221, 8);
 	text-transform: uppercase;
 }
 .room-grid-view:hover .room-info .room-book  a{
 	color: #ffffff;
-	background: #00ADEF;
+	background: rgb(5, 94, 27);
 }
 /* Subscribe Section */ 
 .subscribe-box .form-control {
@@ -1681,7 +1681,7 @@ h5 {
     padding: 10px;
 }
 .subscribe-box button {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     border-radius: 0;
     color: #fff;
     height: 50px;
@@ -1759,7 +1759,7 @@ h5 {
 	padding: 20px 15px;
 }
 .col-grid .bottom a {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     color: #fff;
     display: block;
     font-weight: bold;
@@ -1829,7 +1829,7 @@ h5 {
 	position: relative;
 }
 .hot-deals .nav-tabs .active:after {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     content: "";
     height: 20px;
     left: 40%;
@@ -1845,7 +1845,7 @@ h5 {
 .hot-deals .nav-tabs > li.active > a, 
 .hot-deals .nav-tabs > li.active > a:focus, 
 .hot-deals .nav-tabs > li.active > a:hover {
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	color: #fff;
 	border: none;
 	border-radius: 0;
@@ -1875,7 +1875,7 @@ h5 {
 	margin-top: 0px;
 }
 .hot-deal-list .item a {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     color: #fff;
     display: inline-block;
     font-size: 13px;
@@ -2124,7 +2124,7 @@ h5 {
 }
 .price-filter .ui-slider .ui-slider-handle:before {
 	content: '\f067';
-	color: red;
+	color: rgb(8, 221, 8);
 	font-family: FontAwesome;
 	padding: 5px;
 	background: #00ADEF;
@@ -2362,7 +2362,7 @@ h5 {
 	font-weight: 700;
 }
 .hotel-list-view .room-book-box a {
-	background: #f2676b;
+	background: rgb(8, 221, 8);
 	color: #ffffff;
     font-weight: bold;
     padding: 5px 25px;
@@ -2458,7 +2458,7 @@ h5 {
 	margin-top: 30px;
 }
 .lowest-fare-slider .owl-theme .owl-nav [class*="owl-"] {
-	background: #F2676B;
+	background: rgb(8, 221, 8);
 	padding: 5px 3px;
 	margin: 0;
 	border-radius: 0;
@@ -3376,15 +3376,15 @@ h5 {
 	margin-top: 0px;
 }
 .room-complete-detail .room-info-wrapper .book a {
-	border: 2px solid #f9676b;
-    color: #f9676b;
+	border: 2px solid rgb(8, 221, 8);
+    color: rgb(8, 221, 8);
     display: inline-block;
     font-weight: bold;
     margin-top: 15px;
     padding: 5px 30px;
 }
 .room-complete-detail .room-info-wrapper .book a:hover {
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	color: #fff;
 }
 .room-complete-detail .nav-tabs > li > a {
@@ -3540,17 +3540,17 @@ h5 {
 	margin-top: 8px;
 	display: block;
 	font-weight: bold;
-	color: #F2676B;
+	color: rgb(8, 221, 8);
 }
 .load-more a {
-	background: #f2676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     color: #ffffff;
     display: inline-block;
     margin-top: 20px;
     padding: 10px 50px;
 }
 .load-more a:hover {
-	background: #00adef;
+	background: #167504;
 }
 #write-review .form-control {
 	border-radius: 0;
@@ -3560,7 +3560,7 @@ h5 {
 	font-weight: normal;
 } 
 .submit-review {
-	background: #f2676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     border: medium none;
     border-radius: 0;
     color: #ffffff;
@@ -3712,7 +3712,7 @@ h5 {
 	font-weight: bold;
 }
 .booking-box-body .grand-total  button:hover {
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 }
 .booking-box-body .grand-total  h4 {
 	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -4109,7 +4109,7 @@ h5 {
 	position: relative;
 }
 .booking-tab .nav-tabs .active:after {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     content: "";
     height: 5px;
     left: 43%;
@@ -4867,7 +4867,7 @@ h5 {
 	padding: 15px;
 }
 .service-right i {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;
     display: block;
@@ -5345,7 +5345,7 @@ h5 {
 	content: "";
 	width: 100px;
 	height: 5px;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	position: absolute;
 	top: 126%;
 	left: 40%;
@@ -5377,7 +5377,7 @@ h5 {
 .centered-box .subscribe h3 {
 	font-weight: 600;
 	margin-bottom: 20px;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .centered-box .subscribe .form-control {
 	height: 50px;
@@ -5388,7 +5388,7 @@ h5 {
 .centered-box .subscribe	button {
 	height: 50px;
 	border: 0px;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	color: #fff;
 	padding: 10px;
 	width: 100%;
@@ -5406,7 +5406,7 @@ h5 {
 .centered-box .social-media li {
 	display: inline-block;
 	margin: 0px 10px;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	background: #fff;
 	height: 30px;
 	width: 30px;
@@ -5415,7 +5415,7 @@ h5 {
 .centered-box .social-media li a {
 	display: block;
 	padding: 5px;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .centered-box .social-media li a:hover {
 	color: #00adef;
@@ -5466,7 +5466,7 @@ h5 {
 *********************************************************************************/
 .not-found {
 	padding: 60px 0px;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	color: #fff;
 }
 .not-found .desc p,
@@ -5522,7 +5522,7 @@ h5 {
 	-webkit-animation: loader 2s infinite;
 	animation: loader 2s infinite;
 	color: #fff;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 }
 .loading-animation span:nth-child(2) {
 	-webkit-animation: loader 2s infinite 0.5s;
@@ -5621,7 +5621,7 @@ h5 {
 	line-height: 2;
 }
 .search-title p span {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	font-weight: bold;
 }
 /*********************************************************************************
@@ -5639,13 +5639,13 @@ h5 {
 	font-weight: 800;
 	letter-spacing: 1px;
 	margin: 0px 0px 20px;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	color: #fff;
 	position: relative;
 	padding: 20px 0px;
 }
 .room-check h4:after {
-	 background: #f9676b none repeat scroll 0 0;
+	 background: rgb(8, 221, 8) none repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;
     content: "\f046";
@@ -5661,14 +5661,14 @@ h5 {
     border-radius: 0;
     border-right: 1px solid #b6b6b6;
     border-top: 1px solid #b6b6b6;
-    color: #f9676b;
+    color: rgb(8, 221, 8);
 }
 .room-check label {
 	margin-bottom: 10px;
 }
 .room-check .ui-spinner-up i,
 .room-check .ui-spinner-down i {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	z-index: 999;
 }
 .room-check .form-control {
@@ -5722,7 +5722,7 @@ h5 {
 }
 #home-hotel-intro .hotel-intro a {
 	color: #fff;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	border: 2px solid transparent;
 	display: inline-block;
 	padding: 10px 20px;
@@ -5730,9 +5730,9 @@ h5 {
 	margin-top: 15px;
 }
 #home-hotel-intro .hotel-intro a:hover {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	background: transparent;
-	border: 2px solid #f9676b;
+	border: 2px solid rgb(8, 221, 8);
 }
 #home-hotel-intro .hotel-intro a i {
 	margin-left: 10px;
@@ -5792,7 +5792,7 @@ h5 {
 	margin-top: 10px;
 }
 .post-title p {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 #hotel-gallery #room-gallery {
 	margin: 0px !important;
@@ -5838,7 +5838,7 @@ h5 {
 }
 #hotel-gallery .section-title h2,
 #hotel-gallery .section-title h4 {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .hotel-subscribe-row {
 	padding: 60px 0px;
@@ -5859,7 +5859,7 @@ h5 {
 }
 .sm-footer h4 {
 	margin: 0px 0px 20px;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	letter-spacing: 1px;
 	font-weight: bold;
 }
@@ -5872,7 +5872,7 @@ h5 {
 	padding: 0px
 }
 .sm-footer .contact-box i {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	margin-right: 10px;
 }
 .sm-footer .footer-subscribe {
@@ -5887,7 +5887,7 @@ h5 {
 	border: none;
 }
 .sm-footer .footer-subscribe button {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     border: medium none;
     color: #fff;
     height: 40px;
@@ -5895,8 +5895,8 @@ h5 {
     width: 100%;
 }
 .sm-footer .footer-about-box a {
-	border: 2px solid #f9676b;
-    color: #f9676b;
+	border: 2px solid rgb(8, 221, 8);
+    color: rgb(8, 221, 8);
     display: inline-block;
     font-weight: bold;
     padding: 5px 10px;
@@ -5914,7 +5914,7 @@ h5 {
     width: 30px;
 }
 .sm-footer .social-media i:hover {
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 }
 .sm-footer-nav {
 	background: #0A3152;
@@ -5931,7 +5931,7 @@ h5 {
 	border-right: none;
 }
 .sm-footer-nav a:hover {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .sm-footer-nav .copyright {
 	color: #fff;
@@ -6008,7 +6008,7 @@ h5 {
 .hotel2-slider .carousel-caption a:hover {
 	border: 2px solid transparent;
 	color: #fff;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 }
 .room-check-horizontal {
 	padding: 60px 0px 80px;
@@ -6029,7 +6029,7 @@ h5 {
 .room-check-horizontal .input-group-addon {
 	color: #fff;
 	border-radius: 0px;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	border: none;
 }
 .room-check-horizontal .custom-select-button {
@@ -6041,7 +6041,7 @@ h5 {
 }
 .room-check-horizontal .check-button button {
 	color: #fff;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	font-weight: bold;
     height: 40px;
     width: 100%;
@@ -6049,8 +6049,8 @@ h5 {
 }
 .room-check-horizontal .check-button button:hover {
 	background: transparent none repeat scroll 0 0;
-    border: 2px solid #f9676b;
-    color: #f9676b;
+    border: 2px solid rgb(8, 221, 8);
+    color: rgb(8, 221, 8);
 }
 #hotel-intro img {
 	max-width: 100%;
@@ -6187,7 +6187,7 @@ h5 {
     padding: 5px 20px;
 }
 .tour-grid .tour-detail a:hover {
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	border: 2px solid transparent;
 }
 .tour-grid:hover .tour-detail {
@@ -6223,7 +6223,7 @@ h5 {
 }
 .tour-gallery .detail-link a:hover {
 	color: #fff;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	border: 2px solid transparent;
 }
 #why-choose-us {
@@ -6270,7 +6270,7 @@ h5 {
 	line-height: 2;
 }
 .choose-us-item a {
-	background: #f9676b;
+	background: rgb(8, 221, 8);
     color: #fff;
     display: inline-block;
     font-weight: bold;
@@ -6280,8 +6280,8 @@ h5 {
 }
 .choose-us-item a:hover {
 	background: transparent;
-	color: #f9676b;
-	border: 2px solid #f9676b;
+	color: rgb(8, 221, 8);
+	border: 2px solid rgb(8, 221, 8);
 }
 #customer-testimonial {
 	padding: 60px 0px;
@@ -6378,7 +6378,7 @@ h5 {
 	content: "";
 	width: 50%;
 	height: 2px;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	position: absolute;
 	right: -20%;
 	top: 20%
@@ -6387,7 +6387,7 @@ h5 {
 	content: "";
 	width: 50%;
 	height: 2px;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	position: absolute;
 	right: -20%;
 	top: 20%
@@ -6396,7 +6396,7 @@ h5 {
 	content: "";
 	width: 50%;
 	height: 2px;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	position: absolute;
 	left: -20%;
 	top: 20%
@@ -6405,14 +6405,14 @@ h5 {
 	content: "";
 	width: 50%;
 	height: 2px;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	position: absolute;
 	left: -20%;
 	top: 20%
 }
 .work-step i {
     border-radius: 50%;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
     color: #fff;
     font-size: 34px;
     height: 80px;
@@ -6454,7 +6454,7 @@ h5 {
 }
 .car-detail i {
 	margin-right: 10px;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 @media (max-width: 991px) {
 	.modify-car {
@@ -6498,7 +6498,7 @@ h5 {
 	border-left: 1px solid #e6e6e6;
 }
 .car-overview i {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
     display: block;
     font-size: 24px;
     padding-bottom: 10px;
@@ -6539,15 +6539,15 @@ h5 {
 .reserve-car a {
 	color: #fff;
 	border: 2px solid transparent;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	padding: 10px 40px;
 	display: inline-block;
 	margin-top: 40px;
 	font-weight: bold;
 }
 .reserve-car a:hover {
-	color: #f9676b;
-	border: 2px solid #f9676b;
+	color: rgb(8, 221, 8);
+	border: 2px solid rgb(8, 221, 8);
 	background: transparent;
 }
 .clear-top {
@@ -6595,7 +6595,7 @@ h5 {
 	letter-spacing: 1px;
 }
 .product-brief-info .detail h4 i {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	margin-right: 5px;
 }
 .product-brief-info .detail .sidebar-item-body {
@@ -6617,7 +6617,7 @@ h5 {
 	content: "\f058";
 	font-family: "FontAwesome";
 	margin-right: 10px;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .product-brief-info .price-detail {
 	background: #07253F;
@@ -6640,8 +6640,8 @@ h5 {
 	font-weight: bold;
 }
 .product-brief-info .price-detail a:hover {
-	color: #f9676b;
-	border: 2px solid #f9676b;
+	color: rgb(8, 221, 8);
+	border: 2px solid rgb(8, 221, 8);
 }
 .product-brief-info .price-detail a i {
 	margin-right: 5px;
@@ -6667,7 +6667,7 @@ h5 {
 	height: 5px;
 	width: 50px;
 	position: absolute;
-	background: #F9676b;
+	background: rgb(8, 221, 8);
 	left: 40%;
 }
 .product-complete-info .nav-tabs > li > a {
@@ -6729,7 +6729,7 @@ h5 {
 .main-footer-sub button {
 	height: 40px;
 	border: none;
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	color: #fff;
 	width: 100%;
 	font-weight: bold;
@@ -6748,7 +6748,7 @@ h5 {
 	display: inline;
 }
 .main-footer-sub .social-media li a {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;
     display: inline-block;
@@ -6774,15 +6774,15 @@ h5 {
 .main-footer .about-box h3 {
 	font-weight: 800;
 	margin-top: 0px;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	margin-bottom: 15px;
 	letter-spacing: 1px;
 }
 .main-footer .about-box a {
 	display: inline-block;
 	padding: 2px 15px;
-	color: #f9676b;
-	border: 2px solid #f9676b;
+	color: rgb(8, 221, 8);
+	border: 2px solid rgb(8, 221, 8);
 	font-weight: bold;
 }
 .main-footer .links {
@@ -6797,7 +6797,7 @@ h5 {
 .main-footer .links h4,
 .main-footer .contact-box h4, 
 .we-accept h4 {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	margin-top: 0px;
 	text-transform: uppercase;
 	font-weight: 800;
@@ -6814,7 +6814,7 @@ h5 {
 }
 .main-footer .links ul li a:hover,
 .main-footer-nav ul li a:hover {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .main-footer .links ul li:before {
 	content: "\f105";
@@ -6829,7 +6829,7 @@ h5 {
 .main-footer .contact-box p i {
 	border: 2px solid #bec4c8;
     border-radius: 50%;
-    color: #f9676b;
+    color: rgb(8, 221, 8);
     display: inline-block;
     height: 40px;
     margin-right: 10px;
@@ -6905,7 +6905,7 @@ h5 {
 	opacity: 0;
 }
 .image-set .link a {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;
     display: inline-block;
@@ -6943,7 +6943,7 @@ h5 {
 .sign-up-form h4 {
 	font-weight: 800;
 	text-transform: uppercase;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 	margin-bottom: 20px;
 }
 .useful-links {
@@ -6955,7 +6955,7 @@ h5 {
 	color: #07253F;
 }
 .useful-links a:hover {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .login-form ,
 .sign-up-form {
@@ -6983,7 +6983,7 @@ h5 {
 }
 .login-form button,
 .sign-up-form button {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     border: medium none;
     border-radius: 0;
     color: #fff;
@@ -7048,7 +7048,7 @@ h5 {
 	color: #07253F;
 }
 .element-tab .nav-tabs > li > a:hover {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .element-tab .nav > li > a:hover,
 .element-tab .nav > li > a:focus {
@@ -7060,12 +7060,12 @@ h5 {
 }
 .element-tab .tab-style1 .active,
 .element-tab .tab-style1 .active a {
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	color: #fff;
 	position: relative;
 }
 .element-tab .tab-style1 .active:after {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     content: "";
     height: 15px;
     left: 40%;
@@ -7089,10 +7089,10 @@ h5 {
 .element-tab .tab-style2 .active,
 .element-tab .tab-style2 .active a {
 	position: relative;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .element-tab .tab-style2 .active:after {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     content: "";
     height: 5px;
     left: 30%;
@@ -7110,7 +7110,7 @@ h5 {
 	margin: 10px 5px;
 }
 .cbtn {
-	background: #f9676b none repeat scroll 0 0;
+	background: rgb(8, 221, 8) none repeat scroll 0 0;
     border: medium none;
     border-radius: 0;
     color: #fff;
@@ -7142,9 +7142,9 @@ h5 {
 }
 .gbtn {
 	background: transparent;
-    border: 2px solid #f9676b;
+    border: 2px solid rgb(8, 221, 8);
     border-radius: 0;
-	color: #f9676b;
+	color: rgb(8, 221, 8);
     font-weight: bold;
 	transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
@@ -7153,7 +7153,7 @@ h5 {
 	-webkit-transition: all 0.3s ease;
 }
 .gbtn:hover {
-	background: #f9676b;
+	background: rgb(8, 221, 8);
 	color: #fff;
 }
 .element-accordian .panel-default > .panel-heading {
@@ -7347,7 +7347,7 @@ h5 {
 	color: #00adef;
 }
 .view-switcher a:hover {
-	color: #f9676b;
+	color: rgb(8, 221, 8);
 }
 .product-grid-view .car-item .rating-box {
 	display: none;

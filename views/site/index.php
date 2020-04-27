@@ -4,15 +4,9 @@
 
 $this->title = 'SEGOP';
 ?>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164319672-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-164319672-1');
-</script>
+
+
 
     <section id="segv">
         <div class="row full-width-search">
@@ -236,7 +230,7 @@ $this->title = 'SEGOP';
                     <div class="choose-us-item text-center">
                         <h4>RETA</h4>
                         <p>Garante proteção para passageiros, tripulantes e suas bagagens, bem como danos causados pela aeronave segurada a pessoas e bens de terceiros no solo.</p>
-                        <a href="#">ORÇAMENTO</a>
+                        <a href="/site/reta">ORÇAMENTO</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3">
@@ -344,9 +338,9 @@ $this->title = 'SEGOP';
             </div>
         </div>
     </section>
-
-
 <?php
+
+
 $this->registerJs("
     jQuery(function($){
         \"use strict\";

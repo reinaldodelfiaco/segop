@@ -31,7 +31,7 @@ $config = [
         'assetManager' => [
             'bundles' => [
                 'yii\bootstrap\BootstrapAsset' => [
-                    'css' => [],
+                   # 'css' => [],
                 ],
             ],
         ],

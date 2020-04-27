@@ -125,4 +125,13 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionReta()
+    {
+
+        return $this->render('reta',[
+            'model' => new ContactForm()
+        ]);
+    }
+
 }

@@ -39,9 +39,11 @@ class AppAsset extends AssetBundle
         'js/wow.min.js',
         'js/supersized.3.1.3.min.js',
         'js/js.js',
+        'js/jquery.steps.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
     ];
 }

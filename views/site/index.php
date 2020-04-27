@@ -238,7 +238,7 @@ $this->title = 'SEGOP';
                         <h4>CASCO</h4>
                         <p>Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry.</p>
-                        <a href="#">ORÇAMENTO</a>
+                        <a href="/site/casco">ORÇAMENTO</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3">
@@ -246,7 +246,7 @@ $this->title = 'SEGOP';
                         <h4>RC Hangar</h4>
                         <p>Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry.</p>
-                        <a href="#">ORÇAMENTO</a>
+                        <a href="/site/rc">ORÇAMENTO</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3">
@@ -254,7 +254,7 @@ $this->title = 'SEGOP';
                         <h4>Perda de CMA</h4>
                         <p>Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry.</p>
-                        <a href="#">ORÇAMENTO</a>
+                        <a href="/site/cma">ORÇAMENTO</a>
                     </div>
                 </div>
 

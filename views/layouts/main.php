@@ -75,19 +75,19 @@ AppAsset::register($this);
                                     <a href="/">INÍCIO</a>
                                 </li>
                                 <li>
-                                    <a href="#segv">SEGURO VIAGEM</a>
+                                    <a href="/#segv">SEGURO VIAGEM</a>
                                 </li>
                                 <li>
-                                    <a href="#ms">MAIS SEGUROS</a>
+                                    <a href="/#ms">MAIS SEGUROS</a>
                                 </li>
                                 <li>
                                     <a href="https://www.embarquetec.com.br/">SERVIÇOS AERONÁUTICOS</a>
                                 </li>
                                 <li>
-                                    <a href="#about">SOBRE</a>
+                                    <a href="/#about">SOBRE</a>
                                 </li>
                                 <li>
-                                    <a href="#contato">CONTATO</a>
+                                    <a href="/#contato">CONTATO</a>
                                 </li>
                             </ul>
                         </div>

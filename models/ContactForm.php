@@ -38,9 +38,6 @@ class ContactForm extends Model
     {
         return [
             'name' => 'Nome',
-            'name' => 'Nome',
-            'name' => 'Nome',
-            'name' => 'Nome ',
         ];
     }
 

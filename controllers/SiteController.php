@@ -9,6 +9,8 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use yii\httpclient\Client;
+
 
 class SiteController extends Controller
 {
@@ -60,7 +62,22 @@ class SiteController extends Controller
      * @return string
      */
     public function actionIndex()
-    {
+    {   
+        /*
+        |   Testes da API        
+        */
+        $client = new Client();
+
+        $response = $client->createRequest()
+            ->setMethod('GET')
+            ->setUrl('https://apihomologacao.travelace.com.br/v1/destinos')
+            ->addHeaders(['Login' => 'tes.te'])
+            ->addHeaders(['Senha' => 'tes.te'])
+            ->send();
+            print_r($response);
+        
+
+
         return $this->render('index');
     }
 

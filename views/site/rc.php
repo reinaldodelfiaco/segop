@@ -5,7 +5,14 @@ $this->title = "SEGOP";
     <div class="wizzard container">
         <h2>Solicitação do seguro: RC</h2>
         <div id="example-basic">
-            <h3>Keyboard</h3>
+        <div class="row">
+                        <div class="col-md-4 ">
+                            <label for="">Natureza das operações</label>
+                            <select id="inputLicenças" class="form-control">
+                                <option selected>Escolher...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
             <section>
                 <p>Try the keyboard navigation by clicking arrow left or right!</p>
             </section>

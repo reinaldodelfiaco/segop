@@ -93,11 +93,18 @@ $this->title = "SEGOP";
                     <div class="row">
                         <div class="col-md-4 ">
                             <label for="">CPF</label>
-                            <input type="number" max="11"  class="form-control" id="cpf" name="cpf"  required>
+                            <input type="text"   class="form-control" id="cpf" name="cpf"  required>
                         </div>
+                        
                         <div class="col-md-4 ">
                              <label for="">Horas voadas (ultimo ano)</label>
-                             <input type="text" class="form-control" id="hvoada" name="hvoada"  required>
+                             <select id="inputHvoadas" class="form-control">
+                                <option selected>Selecione..</option>
+                                <option>Até 500</option>
+                                <option>De 501 a 1000</option>
+                                <option>De 1001 a 3000</option>
+                                <option>Acima de 3000</option>
+                            </select>
                         </div>
                     </div>
                     <br>
@@ -108,7 +115,13 @@ $this->title = "SEGOP";
                         </div>
                         <div class="col-md-4 ">
                              <label for="">Horas nesta Aeronave</label>
-                             <input type="text" class="form-control" id="voada" name="voada"  required>
+                             <select id="inputHoraAeronave" class="form-control">
+                                <option selected>Selecione..</option>
+                                <option>Até 500</option>
+                                <option>De 501 a 1000</option>
+                                <option>De 1001 a 3000</option>
+                                <option>Acima de 3000</option>
+                            </select>
                         </div>
                     </div>
                     <br>
@@ -143,65 +156,64 @@ $this->title = "SEGOP";
             <section>
             <div class="row">
                   <div class="form-row col-md-4">
-                         <label for="">Nome Completo</label>
+                         <label for="">Nome completo</label>
                           <input type="text" name="nome" class="form-control" id="nome"  required>
                    </div>
                     <div class="form-row col-md-4">
-                         <label for="">Email</label>
+                         <label for="">E-mail</label>
                          <input type="text" name="email" class="form-control" id="email"  required>
                      </div>
-                 </div>
+            </div>
                  <br>
-                    <div class="row">
-                    <div class="form-row col-md-4">
-                            <label for="">CPF/CNPJ</label>
-                            <input type="number" max="11" name="cpf" class="form-control" id="cpf"  required>
-                    </div>
-                        <div class="form-row col-md-4">
+          <div class="row">
+                  <div class="form-row col-md-4">
+                        <label for="">CPF/CNPJ</label>
+                        <input type="text"  name="cpf" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00 "id="cpf"  required>
+                     </div>
+                 <div class="form-row col-md-4">
                             <label for="">Telefone</label>
-                            <input type="number" name="telefone" class="form-control" id="telefone"  required>
-                            </div>
+                            <input type="text" name="telefone" class="form-control phone-mask" placeholder="Ex.: 0000-0000" id="telefone"  required>
+                     </div>
+                 <div class="form-row col-md-4">
+                             <label for="">Celular</label>
+                             <input type="text" name="celular" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000" id="celular"  required>
                     </div>
+              </div>
                     <br>
-                        <div class="row">
-                        <div class="form-row col-md-4">
-                                <label for="">CEP</label>
-                                <input type="text" name="cep" class="form-control" id="cep"  required>
-                        </div>
-                            <div class="form-row col-md-4">
-                                <label for="">Celular</label>
-                                <input type="text" name="celular" class="form-control" id="celular"  required>
-                                </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
+          <div class="row">
+                 <div class="form-row col-md-4">
+                        <label for="CEP">CEP</label>
+                         <input id="cep" name="cep"  class="form-control cep-mask" placeholder="Ex.: 00000-000" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+                  </div>     
+            </div>            
+               <br>
+           <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
                             <label for="">Cidade</label>
                             <input type="text" name="cidade" id="cidade" class="form-control" required>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
+                  <div class="col-md-4">
+                    <div class="form-group">
                             <label for="">Bairro</label>
                             <input type="text" name="bairro" id="bairro" class="form-control" required>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="form-row col-md-2">
-                            <label for="">N°</label>
-                            <input type="number" name="numero" class="form-control" id="numero"  required>
-                    </div>
-                        <div class="form-row col-md-4">
+                   
+            <div class="row">
+                   <div class="form-row col-md-4">
                             <label for="">Complemento</label>
                             <input type="text" name="complemento" class="form-control" id="complemento"  required>
-                            </div>
-                    </div>
+                      </div>
+                  <div class="form-row col-md-2">
+                            <label for="">N°</label>
+                            <input type="number" name="numero" class="form-control" id="numero"  required>
+                     </div>
+             </div>
             </section>
-            
+
             <h3>Enviar</h3>
             <section>
             <center>

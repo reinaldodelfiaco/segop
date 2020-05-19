@@ -74,7 +74,7 @@ class SiteController extends Controller
             ->addHeaders(['Login' => 'tes.te'])
             ->addHeaders(['Senha' => 'tes.te'])
             ->send();
-            print_r($response);
+      
         
 
 

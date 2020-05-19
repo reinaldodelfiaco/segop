@@ -42,6 +42,7 @@ $config = [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
+        
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -52,6 +53,7 @@ $config = [
             ],
         ],
         'db' => $db,
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,

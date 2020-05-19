@@ -72,11 +72,11 @@
                     <div class="row">
                     <div class="form-row col-md-4">
                             <label for="">CPF/CNPJ</label>
-                            <input type="text" name="cpf" class="form-control" id="cpf"  required>
+                            <input type="number" name="cpf" class="form-control" id="cpf"  required>
                     </div>
                         <div class="form-row col-md-4">
                             <label for="">Telefone</label>
-                            <input type="text" name="telefone" class="form-control" id="telefone"  required>
+                            <input type="number" name="telefone" class="form-control" id="telefone"  required>
                             </div>
                     </div>
                     <br>
@@ -87,7 +87,7 @@
                         </div>
                             <div class="form-row col-md-4">
                                 <label for="">Celular</label>
-                                <input type="text" name="celular" class="form-control" id="celular"  required>
+                                <input type="number" name="celular" class="form-control" id="celular"  required>
                                 </div>
                         </div>
                         <br>
@@ -110,7 +110,7 @@
                 <div class="row">
                     <div class="form-row col-md-2">
                             <label for="">N°</label>
-                            <input type="text" name="numero" class="form-control" id="numero"  required>
+                            <input type="number" name="numero" class="form-control" id="numero"  required>
                     </div>
                         <div class="form-row col-md-4">
                             <label for="">Complemento</label>

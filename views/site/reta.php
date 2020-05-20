@@ -90,19 +90,10 @@
                                 <label for="CEP">CEP</label>
                                      <input id="cep" name="cep"  class="form-control cep-mask" placeholder="Ex.: 00000-000" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
                               </div>
-                                  <div class="col-md-2"><br>
-                                <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
-    </div>
-                       </div>
-                        
-                        <br>
-                        <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
+                        <div class="col-md-4">
                             <label for="">Cidade</label>
                             <input type="text" name="cidade" id="cidade" class="form-control" required>
-                        </div>
-                    </div>
+                      </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
@@ -111,8 +102,6 @@
                             <input type="text" name="bairro" id="bairro" class="form-control" required>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="form-row col-md-2">
                             <label for="">N°</label>
                             <input type="number" name="numero" class="form-control" id="numero"  required>
@@ -122,7 +111,7 @@
                             <input type="text" name="complemento" class="form-control" id="complemento"  required>
                             </div>
                     </div>
-            </section>
+                </section>
 
             <h3>Enviar</h3>
             <section>

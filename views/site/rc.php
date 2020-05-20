@@ -210,6 +210,7 @@ vigilância"></textarea>
                              <div class="form-row col-md-6">
                                  <label for="">Qual a experiência dos seus técnicos?</label>
                                      <textarea cols="40" rows="3" maxlength="10"></textarea>
+                              </div>
                     </div>
                   </section>
                    <h3>Translados e Contratos</h3>
@@ -252,12 +253,89 @@ vigilância"></textarea>
                                     <label class="radio-inline">
                                           <input type="radio" name="radio"> Não</label>
                                  </div>
-                    </div>
-                                      
+                    </div>   
             </section>
-            <h3>Voo de testes</h3>
-                            <section>
+             <h3>Voo de testes</h3>
+                 <section>
+                     <h4>Qual o valor máximo e médio das aeronaves que fizeram voos de testes nos últimos 12 (doze) meses?</h3>
+                         <div class="row">
+                              <h4>Asas Fixas</h4>
+                                 <div class="col-md-2 ">
+                                   <label for="">Moeda</label><br>
+                                     <select id="inputMoeda" class="form-control ">
+                                      <option>Dólar</option>
+                                     </select>
+                                 </div>  
+                                 <div class="col-md-2 ">
+                                   <label for="">Máximo ()</label><br>
+                                      <select id="inputMaximo" class="form-control ">
+                                         <option>10.0000.000.00</option>
+                                      </select>
+                                 </div>  
+                                 <div class="col-md-2 ">
+                                   <label for="">Médio ()</label><br>
+                                      <select id="inputMedio" class="form-control ">
+                                         <option> 800.000.00</option>
+                                    </select>
+                                 </div>  
+                          </div>
+                          
+                            <div class="row">
+                              <h4>Asas Rotativas</h4>
+                                 <div class="col-md-2 ">
+                                   <label for="">Moeda</label><br>
+                                     <select id="inputMoeda" class="form-control ">
+                                      <option>Dólar</option>
+                                     </select>
+                                 </div>  
+                                 <div class="col-md-2 ">
+                                   <label for="">Máximo ()</label><br>
+                                      <select id="inputMaximo" class="form-control ">
+                                         <option>10.0000.000.00</option>
+                                      </select>
+                                 </div>  
+                                 <div class="col-md-2 ">
+                                   <label for="">Médio ()</label><br>
+                                      <select id="inputMedio" class="form-control ">
+                                         <option> 800.000.00</option>
+                                    </select>
+                                 </div>  
+                          </div>
+                            <br>
+                            
+                            <div class="row">
+                                 <label class="col-lg-10">É previsto que se tenha alterações nos próximos 12 (doze) meses para os valores indicados anteriormente?</label>
+                                        <div class="col-lg-6">
+                                             <label class="radio-inline">
+                                                 <input type="radio" name="radio"> Sim </label>
+                                                    <label class="radio-inline">
+                                                <input type="radio" name="radio"> Não</label>
+                                        </div>
+                            </div>
+                <br>                  
+                <div class="row">
+                      <div class="form-row col-md-4">
+                            <label for="">Qual o tempo médio de cada voo de teste?</label>
+                               <input type="text" name="tempo" id="tempo"  class="form-control" required>
+                       </div>  
+                       </div>
                             </section>
+                            <h3>Pilotos</h3>
+                     <section>
+                     <div class="row">
+                             <div class="form-row col-md-6">
+                                 <label for="">Tipos/Modelos de aeronaves usualmente testados:</label>
+                                     <textarea cols="50" rows="5" maxlength="10"></textarea>
+                             </div>
+                     </div>
+                     <br>
+                     <div class="row">
+                             <div class="form-row col-md-10">
+                                 <label for="">Qual a experiência dos pilotos (ANAC, CPF, Treinamentos, experiência total, no tipo e no modelo)</label>
+                                 <textarea cols="60" rows="10" maxlength="30"></textarea>
+                             </div>
+                     </div>
+                     </section>
                  <h3>Sinistros</h3>
                      <section>
                          <div class="row">

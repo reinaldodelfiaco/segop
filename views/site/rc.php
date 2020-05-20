@@ -127,8 +127,12 @@ $this->title = "SEGOP";
                                      </select>
                              </div>  
                           </div>   
-                     <br>
-                       <div class="row">
+                    
+            </section>
+            
+            <h3>Aeronaves Hangaradas</h3>
+                  <section>   
+                  <div class="row">
                          <h4>Quais são as aeronaves hangariadas?</h3>
                                  <div class="form-row col-md-4">
                                       <label for="">Fabricante</label>
@@ -143,29 +147,73 @@ $this->title = "SEGOP";
                                           <input type="text" name="quantidade" id="quantidade" class="form-control" required>
                                 </div>  
                       </div>
-                <br>
-                     <div class="row">
-                           <div class="form-row col-md-4">
-                                 <label for="">Tipo de Construção</label>
-                                    <input type="text" name="construcao" id="construcao" placeholder="Ex. (metálica, alvenaria..)" class="form-control" required>
-                            </div>  
-                          <div class="form-row col-md-4">
-                              <label for="">Qual o valor médio das aeronaves?</label>
-                                 <input type="text" name="valor" id="valor" class="form-control" required>
-                         </div>  
-                    </div>
-                 <br>
-                  <div class="row">
-                         <div class="form-row col-md-4">
-                             <label for="">Sistema de Proteção</label>
-                                 <textarea cols="50" rows="3" maxlength="10" placeholder="Detalhe os sistemas de proteção a incêndio e
+                      <br>
+                              
+                <div class="row">
+                      <div class="form-row col-md-4">
+                            <label for="">Tipo de Construção</label>
+                               <input type="text" name="construcao" id="construcao" placeholder="Ex. (metálica, alvenaria..)" class="form-control" required>
+                       </div>  
+                     <div class="form-row col-md-4">
+                         <label for="">Qual o valor médio das aeronaves?</label>
+                            <input type="text" name="valor" id="valor" class="form-control" required>
+                    </div>  
+                    <div class="form-row col-md-4">
+                        <label for="">Sistema de Proteção</label>
+                            <textarea cols="45" rows="3" maxlength="10" placeholder="Detalhe os sistemas de proteção a incêndio e
 vigilância"></textarea>
-                         </div>
-                 </div>
-            </section>
-
-            <h3>Translados e Contratos</h3>
-                  <section>
+                    </div>
+               </div>
+            
+             <div class="row">
+                    <div class="form-row col-md-6">
+                        <label for="">Quais são as atividades de manutenção realizadas?</label>
+                            <textarea cols="70" rows="10" maxlength="30"></textarea>
+                    </div>
+            </div>
+            <br>
+            
+                </section>
+                <h3>Informações</h3>
+                      <section>   
+                          <div class="row">
+                               <div class="form-row col-md-12">
+                                 <label for="">Quais são os tipos e modelos de aeronaves e turbinas usualmente repadadas nos últimos 12 (doze) meses?</label>
+                                   <textarea cols="40" rows="5" maxlength="15" ></textarea>
+                                 </div>
+                          </div>
+                        <br>
+                         <div class="row">
+                             <div class="form-row col-md-6">
+                                 <label for="">A empresa fabrica qualquer produto? Se sim, qual?</label>
+                                   <textarea cols="40" rows="3" maxlength="15"></textarea>
+                             </div>
+                             <div class="form-row col-md-6">
+                                <label for="">Quais fabricantes de produtos aeronaúticos a empresa representa?</label>
+                                  <textarea cols="40" rows="3" maxlength="10" placeholder="Quais fabricantes de produtos aeronúticos a empresa representa?"></textarea>
+                             </div>
+                        </div>
+                     <br>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="col-lg-10 control-label">A empresa presta serviços pra norte-americanos?</label>
+                                  <div class="col-lg-4">
+                                      <label class="radio-inline">
+                                          <input type="radio" name="radio"> Sim </label>
+                                             <label class="radio-inline">
+                                          <input type="radio" name="radio"> Não</label>
+                                    </div>
+                                 </div>
+                        </div>
+                     <br>
+                        <div class="row">
+                             <div class="form-row col-md-6">
+                                 <label for="">Qual a experiência dos seus técnicos?</label>
+                                     <textarea cols="40" rows="3" maxlength="10"></textarea>
+                    </div>
+                  </section>
+                   <h3>Translados e Contratos</h3>
+                            <section>
                      <div class="form-group">
                          <label class="col-lg-10 control-label">A sua empresa realiza translado de aeronave?</label>
                                 <div class="col-lg-6">
@@ -207,6 +255,9 @@ vigilância"></textarea>
                     </div>
                                       
             </section>
+            <h3>Voo de testes</h3>
+                            <section>
+                            </section>
                  <h3>Sinistros</h3>
                      <section>
                          <div class="row">

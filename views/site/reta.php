@@ -6,13 +6,13 @@
     <h2>Solicitação do seguro: Reta</h2>
     <form action="/site/reta" method="post">
         <div id="example-basic">
-            <h3>Matrícula</h3>
+            <h3>Informações aeronave</h3>
             <section>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for=""> Matrícula</label>
-                            <input type="text" name="matricula" id="matricula" class="form-control" required>
+                            <input type="text" name="matricula" id="matricula" placeholder="Ex. (PT-FJC)" class="form-control" required>
                         </div>
                     </div>
                 </div>
@@ -72,24 +72,29 @@
                     <div class="row">
                     <div class="form-row col-md-4">
                             <label for="">CPF/CNPJ</label>
-                            <input type="number" name="cpf" class="form-control" id="cpf"  required>
+                            <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
                     </div>
                         <div class="form-row col-md-4">
                             <label for="">Telefone</label>
-                            <input type="number" name="telefone" class="form-control" id="telefone"  required>
+                            <input type="text" name="telefone" class="form-control phone-mask" placeholder="Ex.: 0000-0000" id="telefone"  required>
                             </div>
-                    </div>
-                    <br>
-                        <div class="row">
-                        <div class="form-row col-md-4">
-                                <label for="">CEP</label>
-                                <input type="text" name="cep" class="form-control" id="cep"  required>
-                        </div>
                             <div class="form-row col-md-4">
-                                <label for="">Celular</label>
-                                <input type="number" name="celular" class="form-control" id="celular"  required>
+                            <label for="">Celular</label>
+                             <input type="text" name="celular" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000" id="celular"  required>
                                 </div>
                         </div>
+                  
+                    <br>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                                <label for="CEP">CEP</label>
+                                     <input id="cep" name="cep"  class="form-control cep-mask" placeholder="Ex.: 00000-000" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+                              </div>
+                                  <div class="col-md-2"><br>
+                                <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
+    </div>
+                       </div>
+                        
                         <br>
                         <div class="row">
                     <div class="col-md-4">

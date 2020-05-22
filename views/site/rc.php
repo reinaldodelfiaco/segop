@@ -18,7 +18,7 @@ $this->title = "SEGOP";
                         <div class="form-row col-md-6">
                                 <label for="">Qual é a quantidade de hangares que você deseja segurar?</label>
                                     <div class="col-md-4">
-                                        <input type="number" name="hangar" class="form-control"  id="hangar"  required>
+                                        <input type="number" name="hangar" class="form-control"  id="hangar"  required="true">
                                      </div>
                         </div>
                   </div>
@@ -26,7 +26,7 @@ $this->title = "SEGOP";
                  <div class="row">
                         <div class="col-md-4 ">
                             <label for="">Quando iniciou as operações?</label>
-                            <input type="date" name="data" class="form-control"  id="data"  required>
+                            <input type="date" name="data" class="form-control"  id="data"  required="true">
                         </div>
                   </div>
                     <br>
@@ -34,7 +34,7 @@ $this->title = "SEGOP";
                         <div class="form-row col-md-6 ">
                             <label for="">Qual a quantidade de hangares que você opera?</label>
                               <div class="col-md-4">
-                               <input type="number" name="hangar" class="form-control"  id="hangar"  required>
+                               <input type="number" name="hangar" class="form-control"  id="hangar"  required="true">
                               </div>
                         </div>
                 </div>
@@ -55,41 +55,41 @@ $this->title = "SEGOP";
                     <div class="row">
                          <div class="form-row col-md-2">
                                  <label for="CEP">CEP</label>
-                                   <input id="cep" name="cep"  class="form-control cep-mask" placeholder="Ex.: 00000-000" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+                                   <input id="cep" name="cep"  class="form-control cep-mask" placeholder="Ex.: 00000-000" required="true" value="" type="search" maxlength="8" pattern="[0-9]+$">
                          </div>  
                          <div class="col-md-4">
                                  <label for="">Endereço</label>
-                                    <input type="text" name="rua" id="rua" class="form-control" required>                         
+                                    <input type="text" name="rua" id="rua" class="form-control" required="true">                         
                          </div>
                         <div class="col-md-2">
                                  <label for="">Complemento</label>
-                                     <input type="text" name="complemento" id="complemento" class="form-control" required>
+                                     <input type="text" name="complemento" id="complemento" class="form-control" required="true">
                         </div>  
                         <div class="col-md-1">
                                  <label for="">N°</label>
-                                     <input type="text" name="numero" id="numero" class="form-control" required>
+                                     <input type="text" name="numero" id="numero" class="form-control" required="true">
                         </div>   
                         <div class="col-md-2">
                                  <label for="">Bairro</label>
-                                    <input type="text" name="bairro" id="bairro" class="form-control" required>
+                                    <input type="text" name="bairro" id="bairro" class="form-control" required="true">
                         </div>                                   
                      </div> 
                  <br>
                         <div class="row">
                          <div class="col-md-4">
                                  <label for="">Cidade</label>
-                                    <input type="text" name="cidade" id="cidade" class="form-control" required>                    
+                                    <input type="text" name="cidade" id="cidade" class="form-control" required="true">                    
                          </div>
                          <div class="col-md-2">
                                   <label for="">Estado</label>
-                                     <input type="text" name="uf" id="uf" class="form-control" required>
+                                     <input type="text" name="uf" id="uf" class="form-control" required="true">
                          </div> 
                      </div>
                 <br>
                          <div class="row">
                              <div class="col-md-4 ">
                                  <label for="">Realiza abastecimento de Aeronave?</label><br>
-                                     <select id="inputAbastecimento" class="form-control ">
+                                     <select id="inputAbastecimento" class="form-control " >
                                           <option>Sim</option>
                                           <option>Não</option>
                                     </select>
@@ -136,15 +136,15 @@ $this->title = "SEGOP";
                          <h4>Quais são as aeronaves hangariadas?</h3>
                                  <div class="form-row col-md-4">
                                       <label for="">Fabricante</label>
-                                          <input id="fabricante" name="fabricante"  class="form-control">
+                                          <input id="fabricante" name="fabricante"  class="form-control" required="true">
                                  </div>  
                                  <div class="col-md-4">
                                       <label for="">Modelo</label>
-                                          <input type="text" name="modelo" id="modelo" class="form-control" required>
+                                          <input type="text" name="modelo" id="modelo" class="form-control" required="true">
                                 </div>                           
                                  <div class="col-md-2">
                                      <label for="">Quantidade</label>
-                                          <input type="text" name="quantidade" id="quantidade" class="form-control" required>
+                                          <input type="text" name="quantidade" id="quantidade" class="form-control" required="true">
                                 </div>  
                       </div>
                       <br>
@@ -152,23 +152,23 @@ $this->title = "SEGOP";
                 <div class="row">
                       <div class="form-row col-md-4">
                             <label for="">Tipo de Construção</label>
-                               <input type="text" name="construcao" id="construcao" placeholder="Ex. (metálica, alvenaria..)" class="form-control" required>
+                               <input type="text" name="construcao" id="construcao" placeholder="Ex. (metálica, alvenaria..)" class="form-control" required="true">
                        </div>  
                      <div class="form-row col-md-4">
                          <label for="">Qual o valor médio das aeronaves?</label>
-                            <input type="text" name="valor" id="valor" class="form-control" required>
+                            <input type="text" name="valor" id="valor" class="form-control" required="true">
                     </div>  
                     <div class="form-row col-md-4">
                         <label for="">Sistema de Proteção</label>
                             <textarea cols="45" rows="3" maxlength="10" placeholder="Detalhe os sistemas de proteção a incêndio e
-vigilância"></textarea>
+vigilância" required="true"></textarea>
                     </div>
                </div>
             
              <div class="row">
                     <div class="form-row col-md-6">
                         <label for="">Quais são as atividades de manutenção realizadas?</label>
-                            <textarea cols="70" rows="10" maxlength="30"></textarea>
+                            <textarea cols="70" rows="10" maxlength="30" ></textarea>
                     </div>
             </div>
             <br>
@@ -316,7 +316,7 @@ vigilância"></textarea>
                 <div class="row">
                       <div class="form-row col-md-4">
                             <label for="">Qual o tempo médio de cada voo de teste?</label>
-                               <input type="text" name="tempo" id="tempo"  class="form-control" required>
+                               <input type="text" name="tempo" id="tempo"  class="form-control" required="true">
                        </div>  
                        </div>
                             </section>
@@ -364,7 +364,7 @@ vigilância"></textarea>
                                <div class="form-row col-md-6">
                                     <label for=""> Receita de hangaragem auferida nos últimos 12 (doze) meses:</label>
                                     <div class="col-md-5">
-                                     <input type="text" name="auferida" id="auferida" placeholder="Valor R$" class="form-control" required>
+                                     <input type="text" name="auferida" id="auferida" placeholder="Valor R$" class="form-control" required="true">
                                     </div>
                                 </div>
                             </div>
@@ -373,7 +373,7 @@ vigilância"></textarea>
                                <div class="form-row col-md-6">
                                     <label for=""> Receita de hangaragem estimada nos últimos 12 (doze) meses:</label>
                                     <div class="col-md-5">
-                                   <input type="text" name="estimada" id="estimada" placeholder="Valor R$" class="form-control" required>
+                                   <input type="text" name="estimada" id="estimada" placeholder="Valor R$" class="form-control" required="true">
                                  </div>
                                 </div>
                          </div>
@@ -389,11 +389,11 @@ vigilância"></textarea>
                              </div>  
                              <div class="form-row col-md-4">
                                  <label for=""> Valor (R$)</label>
-                                      <input type="text" name="valor" id="valor"  class="form-control" required>
+                                      <input type="text" name="valor" id="valor"  class="form-control" required="true">
                              </div>
                               <div class="form-row col-md-4">
                                    <label for=""> Franquia (R$)</label>
-                                      <input type="text" name="franquia" id="franquia"  class="form-control" required>
+                                      <input type="text" name="franquia" id="franquia"  class="form-control" required="true">
                              </div>
                           </div>
                  </section>
@@ -402,33 +402,33 @@ vigilância"></textarea>
                             <div class="row">
                                   <div class="form-row col-md-4">
                                       <label for="">Nome completo</label>
-                                         <input type="text" name="nome" class="form-control" id="nome"  required>
+                                         <input type="text" name="nome" class="form-control" id="nome"  required="true">
                                   </div>
                              <div class="form-row col-md-4">
                                   <label for="">E-mail</label>
-                                     <input type="text" name="email" class="form-control" id="email"  required>
+                                     <input type="text" name="email" class="form-control" id="email"  required="true">
                               </div>
                           </div>
                      <br>
                           <div class="row">
                                 <div class="form-row col-md-4">
                                      <label for="">CPF/CNPJ</label>
-                                          <input type="text"  name="cpf" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00 "id="cpf"  required>
+                                          <input type="text"  name="cpf" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00 " id="cpf"  required="true">
                                  </div>
                                 <div class="form-row col-md-4">
                                      <label for="">Telefone</label>
-                                          <input type="text" name="telefone" class="form-control phone-mask" placeholder="Ex.: 0000-0000" id="telefone"  required>
+                                          <input type="text" name="telefone" class="form-control phone-mask" placeholder="Ex.: 0000-0000" id="telefone"  required="true">
                                 </div>
                                 <div class="form-row col-md-4">
                                      <label for="">Celular</label>
-                                         <input type="text" name="celular" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000" id="celular"  required>
+                                         <input type="text" name="celular" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000" id="celular"  required="true">
                                  </div>
                              </div>
                         <br>
                           <div class="row">
                                <div class="form-row col-md-4">
                                     <label for="CEP">CEP</label>
-                                     <input id="cep" name="cep"  class="form-control cep-mask" placeholder="Ex.: 00000-000" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+                                     <input id="cep" name="cep"  class="form-control cep-mask" placeholder="Ex.: 00000-000" required="true" value="" type="search" maxlength="8" pattern="[0-9]+$">
                                  </div>     
                          </div>            
                      <br>
@@ -436,24 +436,24 @@ vigilância"></textarea>
                             <div class="col-md-4">
                                 <div class="form-group">
                                      <label for="">Cidade</label>
-                                          <input type="text" name="cidade" id="cidade" class="form-control" required>
+                                          <input type="text" name="cidade" id="cidade" class="form-control" required="true">
                                   </div>
                             </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                  <label for="">Bairro</label>
-                                         <input type="text" name="bairro" id="bairro" class="form-control" required>
+                                         <input type="text" name="bairro" id="bairro" class="form-control" required="true">
                             </div>
                         </div>
                       </div>
                        <div class="row">
                             <div class="form-row col-md-4">
                                 <label for="">Complemento</label>
-                                     <input type="text" name="complemento" class="form-control" id="complemento"  required>
+                                     <input type="text" name="complemento" class="form-control" id="complemento"  required="true">
                              </div>
                             <div class="form-row col-md-2">
                                  <label for="">N°</label>
-                                     <input type="number" name="numero" class="form-control" id="numero"  required>
+                                     <input type="number" name="numero" class="form-control" id="numero"  required="true">
                             </div>
                      </div>
                  </section>

@@ -1,5 +1,5 @@
 <?php
-    $this->title = "SEGOP";
+    $this->title = "SEGOP - Seguro de Responsabilidade Civil do Transportador Aéreo (RETA)";
 ?>
 
 <div class="wizzard container">

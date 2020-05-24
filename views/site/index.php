@@ -4,10 +4,6 @@
 
 $this->title = 'SEGOP';
 ?>
-
-
-
-
     <section id="segv">
         <div class="row full-width-search">
             <div class="container clear-padding">
@@ -236,28 +232,24 @@ $this->title = 'SEGOP';
                 <div class="col-md-3 col-sm-3">
                     <div class="choose-us-item text-center">
                         <h4>CASCO</h4>
-                        <p>Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.</p>
+                        <p>Proteção para a fuselagem de sua aeronave, garantindo cobertura para dados causados por incidentes e acidentes.</p>
                         <a href="/site/casco">ORÇAMENTO</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3">
                     <div class="choose-us-item text-center">
                         <h4>RC Hangar</h4>
-                        <p>Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.</p>
+                        <p>Cobre a responsabilidade civil para a hangaragem e serviços aeroportuários durante acidentes, incidentes e fatores meteorológicos.</p>
                         <a href="/site/rc">ORÇAMENTO</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3">
                     <div class="choose-us-item text-center">
                         <h4>Perda de CMA</h4>
-                        <p>Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.</p>
+                        <p>Sem preocupações com o final de sua carreira como tripulante, por questões de saúde crônica ou por acidentes de trabalhos.</p>
                         <a href="/site/cma">ORÇAMENTO</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -285,7 +277,7 @@ $this->title = 'SEGOP';
                         </p>
                         <div class="clearfix"></div>
                             <div class="col-md-12 text-center we-accept">
-                                <h4>Seguradoras</h4>
+                                <h4>SEGURADORAS PARCEIRAS</h4>
                                 <ul>
                                     <li><img src="/images/mastercard.png" alt="cruise"></li>
                                     <li><img src="/images/visa.png" alt="cruise"></li>

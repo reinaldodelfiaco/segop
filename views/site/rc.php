@@ -10,12 +10,15 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                 <div class="row">
                     <div class="col-md-4 ">
                         <label for="inputNatureza">Natureza das operações</label>
-                        <select id="inputNatureza" size="5" multiple>
+                        <!-- colocar multipla escolha -->
+                        <select id="inputNatureza" class="form-control">
                             <option selected>Escolher...</option>
                             <option>Hangaragem</option>
-                            <option>Escola de Aviação</option>
+                            <option>Centro de Instrução</option>
+                            <option>Operações Agrícolas</option>
                             <option>Oficina de Manutenção</option>
                             <option>Táxi Aéreo</option>
+                            <option>Linha Aérea</option>
                         </select>
                     </div>
                     <div class="form-row col-md-6">

@@ -104,13 +104,13 @@ AppAsset::register($this);
             <div class="container clear-padding">
                 <div class="col-md-7 col-sm-7">
                     <form >
-                        <label>SUBSCRIBE TO OUR NEWSLETTER</label>
+                        <label>INSCREVA-SE EM NOSSA NEWSLETTER</label>
                         <div class="clearfix"></div>
                         <div class="col-md-9 col-sm-8 col-xs-6 clear-padding">
-                            <input class="form-control" type="email" required placeholder="Enter Your Email" name="email">
+                            <input class="form-control" type="email" required placeholder="Digite o seu Email" name="email">
                         </div>
                         <div class="col-md-3 col-sm-4 col-xs-6 clear-padding">
-                            <button type="submit"><i class="fa fa-paper-plane"></i>SUBSCRIBE</button>
+                            <button type="submit"><i class="fa fa-paper-plane"></i>INSCREVA-SE</button>
                         </div>
                     </form>
                 </div>
@@ -120,7 +120,6 @@ AppAsset::register($this);
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                         </ul>
                     </div>
@@ -131,14 +130,14 @@ AppAsset::register($this);
             <div class="container clear-padding">
                 <div class="col-md-3 col-sm-6 about-box">
                     <h3>SEGOP</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    <a href="#">SAIBA MAIS</a>
+                    <p>Corretora de seguros, desenvolvidas por especialistas em aviação, pensando em comodidade, agilidade e inovação no processo de obtenção de apólices.</p>
+                    <a href="/#about">SAIBA MAIS</a>
                 </div>
                 <div class="col-md-3 col-sm-6 links">
-                    <h4>Popular Tours</h4>
+                    <h4>Seguradoras parceiras</h4>
                     <ul>
-                        <li><a href="#">Romantic France</a></li>
-                        <li><a href="#">Wonderful Lodnon</a></li>
+                        <li><a href="#">Travel ACE</a></li>
+                        <li><a href="#">Sul América</a></li>
                         <li><a href="#">Awesome Amsterdam</a></li>
                         <li><a href="#">Wild Africa</a></li>
                         <li><a href="#">Beach Goa</a></li>
@@ -148,15 +147,13 @@ AppAsset::register($this);
                 </div>
                 <div class="clearfix visible-sm-block"></div>
                 <div class="col-md-3 col-sm-6 links">
-                    <h4>Our Services</h4>
+                    <h4>Nossos serviços</h4>
                     <ul>
-                        <li><a href="#">Domestic Flights</a></li>
-                        <li><a href="#">International Flights</a></li>
-                        <li><a href="#">Tours & Holidays</a></li>
-                        <li><a href="#">Domestic Hotels</a></li>
-                        <li><a href="#">International Hotels</a></li>
-                        <li><a href="#">Cruise Holidays</a></li>
-                        <li><a href="#">Car Rental</a></li>
+                        <li><a href="/#segv">Seguro viagem</a></li>
+                        <li><a href="/site/reta">Seguro RETA</a></li>
+                        <li><a href="/site/casco">Seguro CASCO</a></li>
+                        <li><a href="/site/rc">Seguro RC Hangar</a></li>
+                        <li><a href="/site/cma">Seguro do CMA</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6 contact-box">
@@ -180,7 +177,7 @@ AppAsset::register($this);
         <div class="main-footer-nav row">
             <div class="container clear-padding">
                 <div class="col-md-12 col-sm-12">
-                    <p>Segop Corretora de Seguros Aeronáuticos (c) 2020. Todos os direitos reservados. Desenvolvido por Embarque Tec.</p>
+                    <p>Segop Corretora de Seguros Aeronáuticos (c) 2020. Todos os direitos reservados. Desenvolvido por Embarque Tec Sistemas e serviços para aviação.</p>
                 </div>
                 <div class="go-up">
                     <a href="#"><i class="fa fa-arrow-up"></i></a>

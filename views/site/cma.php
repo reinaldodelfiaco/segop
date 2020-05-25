@@ -21,7 +21,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 <div class="row">
                     <div class="form-row col-md-4">
                         <label for="">RG</label>
-                        <input type="text" name="rg" class="form-control" placeholder="Ex.: 596875" id="rg" required="true">
+                        <input type="number" name="rg" class="form-control" placeholder="Ex.: 596875" id="rg" required="true">
                     </div>
                     <div>
                         <label for="">Orgão de emissão</label>
@@ -29,7 +29,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     </div>
                     <div>
                         <label for="">Data de emissão</label>
-                        <input type="text" id="data_emissao_rg" name="data_emissao_rg" class="form-control" placeholder="DD/MM/AAAA">
+                        <input type="date" id="data_emissao_rg" name="data_emissao_rg" class="form-control" placeholder="DD/MM/AAAA">
                         <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
                     </div>
                 </div>    
@@ -37,7 +37,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 <div class="row">
                     <div class="form-row col-md-4">
                         <label for="">Data de Nascimento</label>
-                        <input type="text" id="data_nascimento" name="data_nascimento" class="form-control" placeholder="DD/MM/AAAA">
+                        <input type="date" id="data_nascimento" name="data_nascimento" class="form-control" placeholder="DD/MM/AAAA">
                         <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
                     </div>
                     <div>
@@ -82,7 +82,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     </div>
                     <div class="form-row col-md-2">
                         <label for="">N°</label>
-                        <input type="text" name="numero" class="form-control" id="numero" placeholder=""  required="true">
+                        <input type="number" name="numero" class="form-control" id="numero" placeholder=""  required="true">
                     </div>
                 </div>
             </section>
@@ -123,6 +123,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     <!-- Botão de adicionar, o usuário poderá preencher mais de uma habilitação -->
                 </div>
             </section>
+
             <h3>Experiências e treinamentos</h3>
             <section>
                 <div class="row">
@@ -151,13 +152,14 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     <div>
                         <div class="form-row col-md-4">
                             <label for="">Data de conclusão</label>
-                            <input type="text" id="data_conclusao_curso" name="data_conclusao_curso" class="form-control" placeholder="DD/MM/AAAA">
+                            <input type="date" id="data_conclusao_curso" name="data_conclusao_curso" class="form-control" placeholder="DD/MM/AAAA">
                             <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
                         </div>
                         <!-- adicionar botão de mais, para que possa preencher mais de um curso -->
                     </div>
                 </div>
             </section>
+
             <h3>Histórico de acidentes</h3>
             <section>
                 <div class="form-group">
@@ -194,10 +196,11 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     <!-- incluir o botão de adicionar, o usuário poderá preencher mais de um ocorrido -->
                 </div>
             </section>
+
             <h3>Operador atual</h3>
             <section>
                 <div class="row">
-                    <div class="form-row col-md-4">
+                    <div class="form-row col-md-2">
                         <label for="">Selecione o tipo de operação</label>
                         <select id="tipo_operacao" class="form-control" required="true">
                             <option>Geral/Executiva</option>
@@ -218,25 +221,165 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 </div>
                 <br>
                 <div class="row">
-                    <div class="form-row col-md-4">
-                        <
+                    <div class="form-row col-md-2">
+                        <label for="">Quantas aeronaves esse operador possui?</label>
+                        <input type="number" name="quantidade_aeronaves_operador" id="quantidade_aeronaves_operador" placeholder="Ex.: 17" required="true">
+                    </div>
+                    <div class="form-row col-md-2">
+                        <label for="">Qual a sua função a bordo?</label>
+                        <select id="funcao_bordo" class="form-control" required="true">
+                            <option>Comandante</option>
+                            <option>Primeiro Oficial</option>
+                            <option>Engenheiro(a) de voo</option>
+                            <option>Mecânico(a)</option>
+                            <option>Comissário(a)</option>
                     </div>
                 </div>
                 <!-- fim das opções após selecionar a linha aérea -->
                 <!-- início das opções após selecionar qualquer outra opção, menos linha aérea -->
-                <div>
-
+                <div class="row">
+                    <div class="form-row col-md-4">
+                        <label for="">Marca</label>
+                        <input name="marca" id="marca" type="text" placeholder="Ex.: PP-PPP" required="true">
+                    </div>
+                    <div class="form-row col-md-6">
+                        <label for="">Operador</label>
+                        <input type="text" name="operador" id="operador" placeholder="Ex.: Brasil Vida Táxi Aéreo" required="true">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-row col-md-6>
+                        <label for="">Fabricante</label>
+                        <input type="text" name="fabricante" id="fabricante" placeholder="Cessna" required="true">
+                    </div>
+                    <div class="form-row col-md-2">
+                        <label for="">Modelo</label>
+                        <input type="text" name="modelo" id="modelo" placeholder="C172" required="true">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-row col-md-2">
+                        <label for="">Número de série</label>
+                        <input type="text" name="numero_serie" id="numero_serie" placeholder="86987542" required="true">
+                    </div>
+                    <div class="form-row col-md-2">
+                        <label for="">PMD</label>
+                        <input type="text" name="pmd" id="pmd" placeholder="EX.: 4800 kg" required="true">
+                    </div>
+                    <div class="form-row col-md-2">
+                        <label for="">Ano de Fabricação</label>
+                        <input type="number" name="ano_fabricacao" id="ano_fabricacao" placeholder="Ex.: 1978" required="true">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-row col-md-2">
+                        <label for="">Número de passageiros</label>
+                        <input type="number" name="numero_passageiros" id="numero_passageiros" placeholder="Ex.: 5" required="true">
+                    </div>
+                    <div class="row">
+                        <label for="">Número de tripulantes</label>
+                        <input type="number" name="numero_tripulante" id="numero_tripulante" placeholder="Ex.: 2" required="true">
+                    </div>
+                    <div class="form-row col-md-2">
+                        <label for="">Número de motores</label>
+                        <input type="number" name="numero_motores" id="numero_motores" placeholder="Ex.: 2" required="true">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-row col-md-2">
+                        <label for="">Tipo de Habilitação para Pilotos</label>
+                        <input type="text" name="tipo_habilitacao" id="tipo_habilitacao" placeholder="Ex.: MNTE" required="true">
+                    </div>
+                    <div class="form-row col-md-2">
+                        <label for="">Horas totais de célula</label>
+                        <input type="number" name="horas_totais_celula" id="horas_totais_celula" placeholder="Ex.: 5772" required="true">
+                    </div>
+                    <div class="form-row col-md-2">
+                        <label for="">Horas totais do(s) motor(es)</label>
+                        <input type="number" name="horas_totais_motor" id="horas_totais_motor" placeholder="Ex.: 5772" required="true">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-row col-md-2">
+                        <label for="">Validade do IAM</label>
+                        <input type="date" name="validade_iam" id="validade_iam" placeholder="EX.: DD/MM/AAAA" required="true"
+                    </div>
+                    <div class="form-row col-md-2">
+                        <label for="">Horas totais nos últimos 12 meses</label>
+                        <input type="number" name="horas_totais_doze_meses" id="horas_totais_doze_meses" placeholder="Ex.: 540" required="true"
+                    </div>
+                    <div class="form-row col-md-2">
+                        <label for="">Horas estimadas para os próximos 12 meses</label>
+                        <input type="number" name="horas_estimadas_doze_meses" id="horas_estimadas_doze_meses" placeholder="Ex.: 780" required="true">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-row col-md-6">
+                        <label for="">Oficina onde foi realizada a última revisão geral dos motores</label>
+                        <input type="text" name="oficina_revisao_motores" id="oficina_revisao_motores" placeholder="AEROBAT Oficina de Manutenção Aeronáutica" required="true">
+                    </div>
+                    <br>
+                    <div class="form-row col-md-6">
+                        <label for="">Oficina onde foi realizada a última IAM</label>
+                        <input type="text" name="oficina_ultima_iam" id="oficina_ultima_iam" placeholder="AEROBAT Oficina de Manutenção Aeronáutica" required="true">
+                    </div>
                 </div>
                 <!-- fim das opções após selecionar qualquer outra opção, menos linha aérea -->
             </section>
+
             <h3>Beneficiários</h3>
             <section>
-                <p>The next and previous buttons help you to navigate through your content.</p>
+                <div class="row">
+                    <div class="form-row col-md-2">
+                        <label for="">Quantos serão os beneficiários?</label>
+                        <select id="numero_beneficiarios" class="form-control" required="true">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                    </div>
+                    <br>
+                    <div class="form-row col-md-2">
+                        <label for="">Data de nascimento</label>
+                        <input type="date" name="data_nascimento_beneficiario" id="data_nascimento_benecificario" required="true">
+                    </div>
+                    <div class="form-row col-md-2">
+                        <label for="">Grau de parentesco</label>
+                        <select id="grau_parentesco" class="form-control" required="true">
+                            <option>1° Grau</option>
+                            <option>2° Grau</option>
+                            <option>3° Grau</option>
+                            <option>Familiar distante</option>
+                            <option>Amigo</option>
+                            <option>Conjuge</option>
+                    </div>
+                </div>
             </section>
-            <h3>Enviar</h3>
-            <section>
-                <p>The next and previous buttons help you to navigate through your content.</p>
-            </section>
+
+        <h3>Enviar</h3>
+        <section>
+            <center>
+                <p>Em breve você receberá um e-mail com a nossa cotação!</p>
+
+                <p>Obrigado e conte com a SEGOP</p>
+
+                <button type="button" class="btn btn-primary" href="/site/cma">Adicionar outro tripulante</button>
+
+                <button type="button" class="btn btn-primary" href="/">Pagina Inicial</button>
+            </center>
+        </section>
         </div>
     </div>
 <?php

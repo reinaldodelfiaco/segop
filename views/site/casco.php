@@ -219,9 +219,9 @@ $this->title = "SEGOP";
 
                 <p>Obrigado e conte com a SEGOP</p>
 
-                <button type="button" class="btn btn-primary">Adicionar aeronave</button>
+                <button type="button" class="btn btn-primary" href="/site/casco">Adicionar aeronave</button>
                 
-                <button type="button" class="btn btn-primary">Pagina Inicial</button>
+                <button type="button" class="btn btn-primary" href="/">Pagina Inicial</button>
                 </center>
             </section>
         </div>

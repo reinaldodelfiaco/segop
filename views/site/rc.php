@@ -471,9 +471,9 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
 
                                 <p>Obrigado e conte com a SEGOP</p>
 
-                                        <button type="button" class="btn btn-primary">Adicionar aeronave</button>
+                                        <button type="button" class="btn btn-primary" href="/site/rc">Adicionar aeronave</button>
             
-                                        <button type="button" class="btn btn-primary">Pagina Inicial</button>
+                                        <button type="button" class="btn btn-primary" href="/">Pagina Inicial</button>
                                 </center>
                             </section>
                     </div>

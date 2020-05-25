@@ -10,8 +10,8 @@ $this->title = "SEGOP";
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for=""> Matrícula</label>
-                            <input type="text" name="matricula" id="matricula" class="form-control" placeholder="Ex. PT-FJC" required="true">
+                            <label for=""> Marca</label>
+                            <input type="text" name="marca" id="marca" class="form-control" placeholder="Ex. PT-FJC" required="true">
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ $this->title = "SEGOP";
                         <input type="text" name="modelo" class="form-control" id="modelo"  required="true">
                     </div>
                     <div class="form-row col-md-3">
-                        <label for="">Numero de Série</label>
+                        <label for="">Número de Série</label>
                         <input type="text" name="numeroSerie" class="form-control" id="numeroSerie"  required="true">
                     </div>
                 </div>

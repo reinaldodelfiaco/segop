@@ -139,10 +139,6 @@ AppAsset::register($this);
                         <li><a href="#">Travel ACE</a></li>
                         <li><a href="#">Sul América</a></li>
                         <li><a href="#">Awesome Amsterdam</a></li>
-                        <li><a href="#">Wild Africa</a></li>
-                        <li><a href="#">Beach Goa</a></li>
-                        <li><a href="#">Casino Los Vages</a></li>
-                        <li><a href="#">Romantic France</a></li>
                     </ul>
                 </div>
                 <div class="clearfix visible-sm-block"></div>

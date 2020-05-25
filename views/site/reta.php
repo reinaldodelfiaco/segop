@@ -11,8 +11,8 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for=""> Matrícula</label>
-                            <input type="text" name="matricula" id="matricula" placeholder="Ex. (PT-FJC)" class="form-control" required="true">
+                            <label for=""> Marca</label>
+                            <input type="text" name="marca" id="marca" placeholder="Ex. (PT-FJC)" class="form-control" required="true">
                         </div>
                     </div>
                 </div>

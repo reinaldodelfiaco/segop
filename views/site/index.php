@@ -239,7 +239,7 @@ $this->title = 'SEGOP';
                 <div class="col-md-3 col-sm-3">
                     <div class="choose-us-item text-center">
                         <h4>RC Hangar</h4>
-                        <p>Cobre a responsabilidade civil para a hangaragem e serviços aeroportuários durante acidentes, incidentes e fatores meteorológicos.</p>
+                        <p>Cobre a responsabilidade civil para a hangaragem, acidentes, incidentes e fatores meteorológicos.</p>
                         <a href="/site/rc">ORÇAMENTO</a>
                     </div>
                 </div>

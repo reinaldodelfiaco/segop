@@ -119,7 +119,7 @@
                 <p>Em breve você receberá um e-mail com a nossa cotação!</p>
 
                 <p>Obrigado e conte com a SEGOP</p>
-
+                <!-- Adicionar uma âncora para que ao clicar em adicionar aeronave volte para a primeira tela do wizard -->
                 <button type="button" class="btn btn-primary" href="/site/reta">Adicionar aeronave</button>
                 
                 <button type="button" class="btn btn-primary" href="/">Pagina Inicial</button>

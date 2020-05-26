@@ -212,13 +212,27 @@ $this->title = "SEGOP";
                 </div>
             </section>
 
+            <h3>Beneficiário</h3>
+            <section>
+                <div class="row">
+                    <div class="form-control col-md-4">
+                        <label for="">Nome do beneficiário</label>
+                        <input type="text" name="nome_beneficiario" class="form_control" id="nome_beneficiario" required="true">
+                    </div>
+                    <div class="form-control col-md-2">
+                        <label for="">CPF/CNPJ</label>
+                        <input type="text" name="documento_beneficiario" class="form_control" id="documento_beneficiario" required="true">
+                    <div>    
+                </div>
+            </section>
+
             <h3>Enviar</h3>
             <section>
             <center>
                 <p>Em breve você receberá um e-mail com a nossa cotação!</p>
 
                 <p>Obrigado e conte com a SEGOP</p>
-
+                <!-- Adicionar uma âncora para que ao clicar em adicionar aeronave volte para a primeira tela do wizard -->
                 <button type="button" class="btn btn-primary" href="/site/casco">Adicionar aeronave</button>
                 
                 <button type="button" class="btn btn-primary" href="/">Pagina Inicial</button>

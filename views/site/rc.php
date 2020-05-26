@@ -463,15 +463,29 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                                 </div>
                             </div>
                         </section>
-                        
+
+                        <h3>Beneficiário</h3>
+                            <section>
+                                <div class="row">
+                                    <div class="form-row col-md-4">
+                                        <label for="">Nome do beneficiário</label>
+                                        <input type="text" name="nome_beneficiario" class="form-control" id="nome_beneficiario" placeholder="Ex.: Fulano de tal da Silva" require="true">
+                                    </div>
+                                    <div class="form-row col-md-4">
+                                        <label for="">CPF/CNPJ</label>
+                                        <input type="text" name="documento_benecificario" class="form-control" id="documento_benecifiario" placeholder="Ex.: 04967145" require="true">
+                                    </div>
+                                </div>
+                            </section>
+                            
                         <h3>Enviar</h3>
                             <section>
                                 <center>
                                 <p>Em breve você receberá um e-mail com a nossa cotação!</p>
 
                                 <p>Obrigado e conte com a SEGOP</p>
-
-                                        <button type="button" class="btn btn-primary" href="/site/rc">Adicionar aeronave</button>
+                                        <!-- Adicionar uma âncora para que ao clicar em adicionar hangar volte para a primeira tela do wizard -->
+                                        <button type="button" class="btn btn-primary" href="/site/rc">Adicionar hangar</button>
             
                                         <button type="button" class="btn btn-primary" href="/">Pagina Inicial</button>
                                 </center>

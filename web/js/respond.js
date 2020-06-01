@@ -73,6 +73,8 @@
 	}
 
 	//define vars
+	
+
 	var doc = w.document,
 		docElem = doc.documentElement,
 		mediastyles = [],

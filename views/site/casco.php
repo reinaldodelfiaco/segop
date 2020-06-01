@@ -111,6 +111,7 @@ $this->title = "SEGOP";
                     <div class="col-md-4 ">
                         <label for="">Data de Nascimento</label>
                         <input type="date"  class="form-control" id="dataNascimento" name="dataNascimento"  required="true">
+                  
                     </div>
                     <div class="col-md-4 ">
                         <label for="">Horas nesta Aeronave</label>
@@ -215,14 +216,15 @@ $this->title = "SEGOP";
             <h3>Beneficiário</h3>
             <section>
                 <div class="row">
-                    <div class="form-control col-md-4">
+                    <div class="form-row col-md-4">
                         <label for="">Nome do beneficiário</label>
-                        <input type="text" name="nome_beneficiario" class="form_control" id="nome_beneficiario" required="true">
+                        <input type="text" name="nome_beneficiario" class="form-control" id="nome_beneficiario"  required="true">
                     </div>
-                    <div class="form-control col-md-2">
+                    <div class="row">
+                    <div class="col-md-4 ">
                         <label for="">CPF/CNPJ</label>
-                        <input type="text" name="documento_beneficiario" class="form_control" id="documento_beneficiario" required="true">
-                    <div>    
+                        <input type="text"   class="form-control" id="documento_beneficiario" name="documento_beneficiario"  required="true">
+                    </div>  
                 </div>
             </section>
 
@@ -233,9 +235,9 @@ $this->title = "SEGOP";
 
                 <p>Obrigado e conte com a SEGOP</p>
                 <!-- Adicionar uma âncora para que ao clicar em adicionar aeronave volte para a primeira tela do wizard -->
-                <button type="button" class="btn btn-primary" href="/site/casco">Adicionar aeronave</button>
-                
-                <button type="button" class="btn btn-primary" href="/">Pagina Inicial</button>
+                <button type="button" onClick="window.location='casco';" value="click here" class="btn btn-primary">Adicionar aeronave</button>
+                <button type="submit" class="btn btn-primary" href="/">Pagina Inicial</button>
+               
                 </center>
             </section>
         </div>

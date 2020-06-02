@@ -177,23 +177,37 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 </div>
                 </div>
                 <script>
+                   $(document).ready(function() {
+                    $('#classificacao_situacao').hide();
                     $("#input_tipo_acidente").change(function() {
-                        $('#classificacao_situacao').hide();
-                        if(this.value == "sim")
+                        if(this.value == "sim") {
                         $('#classificacao_situacao').show();
-                    
+                        } else {
+                            $('#classificacao_situacao').hide();
+
+                        }
                     });
+                   }); 
+
+                   $(document).ready(function() {
+                       $('#marca_aeronave').hide();
                     $("#input_tipo_acidente").change(function() {
-                        $('#marca_aeronave').hide();
-                        if(this.value == "sim")
+                        if(this.value == "sim") {
                         $('#marca_aeronave').show();
-                    
+                        } else {
+                            $('#marca_aeronave').hide();
+                        }
                     });
-                    $("#input_tipo_acidente").change(function() {
-                        $('#detalhes_ocorridos').hide();
-                        if(this.value == "sim")
+                    });
+                    $(document).ready(function() {
+                     $('#detalhes_ocorridos').hide();
+                      $("#input_tipo_acidente").change(function() {
+                        if(this.value == "sim") {
                         $('#detalhes_ocorridos').show();
-                    
+                        } else {
+                            $('#detalhes_ocorridos').hide();
+                        }
+                      });
                     });
                   
                 </script>
@@ -231,10 +245,10 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     <div class="form-row col-md-4">
                         <label for="">Selecione o tipo de operação</label>
                         <select id="tipo_operacao" class="form-control" required="true">
-                            <option value="geral_executiva">Geral/Executiva</option>
-                            <option value="centro_instituicao">Centro de Instrução</option>
-                            <option value="agricola">Agrícola</option>
-                            <option value="taxi">Táxi Aéreo</option>
+                            <option value="outro">Geral/Executiva</option>
+                            <option value="outro">Centro de Instrução</option>
+                            <option value="outro">Agrícola</option>
+                            <option value="outro">Táxi Aéreo</option>
                             <option value="linha_aerea">Linha Aérea</option>
                         </select>
                     </div>
@@ -270,14 +284,14 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                         <label for="">Operador</label>
                         <input type="text" name="nome_operador" id="nome_operador" class="form-control" placeholder="Ex.: Sete táxi aéreo LTDA" required="true">
                     </div>
-                    <div class="form-row col-md-6" id="quantidade_aeronaves_operador">
+                      <div class="form-row col-md-6" id="quantidade_aeronaves_operador">
                         <label for="">Quantas aeronaves esse operador possui?</label>
                         <input type="number" name="quantidade_aeronaves_operador" id="quantidade_aeronaves_operador" class="form-control" placeholder="Ex.: 17" required="true">
-                    </div>
-                    </div>
+                     </div>
+                </div>
                     <br>
                     <div class="row">
-                    <div class="form-row col-md-4" id="funcao_bordo">
+                      <div class="form-row col-md-4" id="funcao_bordo">
                         <label for="">Qual a sua função a bordo?</label>
                         <select id="funcao_bordo" class="form-control" required="true">
                             <option>Comandante</option>
@@ -286,123 +300,212 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                             <option>Mecânico(a)</option>
                             <option>Comissário(a)</option>
                             </select>
-                    </div>
+                     </div>
                 </div>
                 <br>
                 <!-- fim das opções após selecionar a linha aérea -->
+              
+                <!-- início das opções após selecionar qualquer outra opção, menos linha aérea -->
                 <script>
                     $("#tipo_operacao").change(function() {
-                        $('#nome_operador').hide();
-                        if(this.value == "linha_aerea")
-                        $('#nome_operador').show();
+                        $('#marca_a').hide();
+                        if(this.value == "outro")
+                        $('#marca_a').show();
 
                     });
 
                     $("#tipo_operacao").change(function() {
-                        $('#quantidade_aeronaves_operador').hide();
-                        if(this.value == "linha_aerea")
-                        $('#quantidade_aeronaves_operador').show();
+                        $('#operador_a').hide();
+                        if(this.value == "outro")
+                        $('#operador_a').show();
 
                     });
 
                     $("#tipo_operacao").change(function() {
-                        $('#funcao_bordo').hide();
-                        if(this.value == "linha_aerea")
-                        $('#funcao_bordo').show();
+                        $('#fabricante').hide();
+                        if(this.value == "outro")
+                        $('#fabricante').show();
 
                     });
-                    
+                    $("#tipo_operacao").change(function() {
+                        $('#modelo').hide();
+                        if(this.value == "outro")
+                        $('#modelo').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#numero_serie').hide();
+                        if(this.value == "outro")
+                        $('#numero_serie').show();
+
+                    });
+
+                    $("#tipo_operacao").change(function() {
+                        $('#pmd').hide();
+                        if(this.value == "outro")
+                        $('#pmd').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#ano_fabricacao').hide();
+                        if(this.value == "outro")
+                        $('#ano_fabricacao').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#numero_passageiros').hide();
+                        if(this.value == "outro")
+                        $('#numero_passageiros').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#numero_tripulante').hide();
+                        if(this.value == "outro")
+                        $('#numero_tripulante').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#numero_motores').hide();
+                        if(this.value == "outro")
+                        $('#numero_motores').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#tipo_habilitacao').hide();
+                        if(this.value == "outro")
+                        $('#tipo_habilitacao').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#horas_totais_celula').hide();
+                        if(this.value == "outro")
+                        $('#horas_totais_celula').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#horas_totais_motor').hide();
+                        if(this.value == "outro")
+                        $('#horas_totais_motor').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#validade_iam').hide();
+                        if(this.value == "outro")
+                        $('#validade_iam').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#horas_totais_doze_meses').hide();
+                        if(this.value == "outro")
+                        $('#horas_totais_doze_meses').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#horas_estimadas_doze_meses').hide();
+                        if(this.value == "outro")
+                        $('#horas_estimadas_doze_meses').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#oficina_revisao_motores').hide();
+                        if(this.value == "outro")
+                        $('#oficina_revisao_motores').show();
+
+                    });
+                    $("#tipo_operacao").change(function() {
+                        $('#oficina_ultima_iam').hide();
+                        if(this.value == "outro")
+                        $('#oficina_ultima_iam').show();
+
+                    });
                </script>
-                <!-- início das opções após selecionar qualquer outra opção, menos linha aérea -->
                 <div class="row">
-                    <div class="form-row col-md-4">
+                    <div class="form-row col-md-4" id="marca_a">
                         <label for="">Marca</label>
-                        <input name="marca" id="marca" type="text" placeholder="Ex.: PP-PPP" required="true">
+                        <input name="marca_a" id="marca_a" type="text" placeholder="Ex.: PP-PPP" required="true">
                     </div>
-                    <div class="form-row col-md-6">
+                    <div class="form-row col-md-4" id="operador_a">
                         <label for="">Operador</label>
-                        <input type="text" name="operador" id="operador" placeholder="Ex.: Brasil Vida Táxi Aéreo" required="true">
+                        <input type="text" name="operador_a" id="operador_a" placeholder="Ex.: Brasil Vida Táxi Aéreo" required="true">
                     </div>
-                </div>
-                <br>
-                <div class="row">
-                <div class="form-row col-md-6">
+                <div class="form-row col-md-6" id="fabricante">
                         <label for="">Fabricante</label>
                         <input type="text" name="fabricante" id="fabricante" placeholder="Cessna" required="true">
                     </div>
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-2" id="modelo">
                         <label for="">Modelo</label>
                         <input type="text" name="modelo" id="modelo" placeholder="C172" required="true">
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4" id="numero_serie">
                         <label for="">Número de série</label>
                         <input type="text" name="numero_serie" id="numero_serie" placeholder="86987542" required="true">
                     </div>
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4" id="pmd">
                         <label for="">PMD</label>
                         <input type="text" name="pmd" id="pmd" placeholder="EX.: 4800 kg" required="true">
                     </div>
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4" id="ano_fabricacao">
                         <label for="">Ano de Fabricação</label>
                         <input type="number" name="ano_fabricacao" id="ano_fabricacao" placeholder="Ex.: 1978" required="true">
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4" id="numero_passageiros">
                         <label for="">Número de passageiros</label>
                         <input type="number" name="numero_passageiros" id="numero_passageiros" placeholder="Ex.: 5" required="true">
                     </div>
                     <div class="row">
+                    <div class="form-row col-md-4" id="numero_tripulante">
                         <label for="">Número de tripulantes</label>
                         <input type="number" name="numero_tripulante" id="numero_tripulante" placeholder="Ex.: 2" required="true">
                     </div>
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4" id="numero_motores">
                         <label for="">Número de motores</label>
                         <input type="number" name="numero_motores" id="numero_motores" placeholder="Ex.: 2" required="true">
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4" id="tipo_habilitacao">
                         <label for="">Tipo de Habilitação para Pilotos</label>
                         <input type="text" name="tipo_habilitacao" id="tipo_habilitacao" placeholder="Ex.: MNTE" required="true">
                     </div>
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4" id="horas_totais_celula">
                         <label for="">Horas totais de célula</label>
                         <input type="number" name="horas_totais_celula" id="horas_totais_celula" placeholder="Ex.: 5772" required="true">
                     </div>
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4" id="horas_totais_motor">
                         <label for="">Horas totais do(s) motor(es)</label>
                         <input type="number" name="horas_totais_motor" id="horas_totais_motor" placeholder="Ex.: 5772" required="true">
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4" id="validade_iam">
                         <label for="">Validade do IAM</label>
                         <input type="date" name="validade_iam" id="validade_iam" placeholder="EX.: DD/MM/AAAA" required="true">
                     </div>
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4" id="horas_totais_doze_meses">
                         <label for="">Horas totais nos últimos 12 meses</label>
                         <input type="number" name="horas_totais_doze_meses" id="horas_totais_doze_meses" placeholder="Ex.: 540" required="true">
                     </div>
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4" id="horas_estimadas_doze_meses">
                         <label for="">Horas estimadas para os próximos 12 meses</label>
                         <input type="number" name="horas_estimadas_doze_meses" id="horas_estimadas_doze_meses" placeholder="Ex.: 780" required="true">
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="form-row col-md-6">
+                    <div class="form-row col-md-6" id="oficina_revisao_motores">
                         <label for="">Oficina onde foi realizada a última revisão geral dos motores</label>
                         <input type="text" name="oficina_revisao_motores" id="oficina_revisao_motores" placeholder="AEROBAT Oficina de Manutenção Aeronáutica" required="true">
                     </div>
                     <br>
-                    <div class="form-row col-md-6">
+                    <div class="form-row col-md-6" id="oficina_ultima_iam"> 
                         <label for="">Oficina onde foi realizada a última IAM</label>
                         <input type="text" name="oficina_ultima_iam" id="oficina_ultima_iam" placeholder="AEROBAT Oficina de Manutenção Aeronáutica" required="true">
                     </div>

@@ -83,11 +83,6 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
 
             <h3>Licenças e habilitações</h3>
             <section >
-            <div class="row">
-            <div class="form-row col-md-3 pull-right">        
-                <button type="submit" id="btnSubmit" value="submit" class="btn btn-primary  pull-right">Adicionar</i> </button>
-                </div>
-                </div>
                 <div class="row">
                        <div class="form-row col-md-4">
                         <label for="">Agência Reguladora</label>
@@ -101,22 +96,20 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
 
                     <div class="form-row col-md-3">
                         <label for="">Data de expedição</label>
-                        <input type="date" id="data_expedicao_licenca" name="data_expedicao_licenca" class="form-control" placeholder="DD/MM/AAAA">
-                                
+                        <input type="date" id="data_expedicao_licenca" name="data_expedicao_licenca" class="form-control" placeholder="DD/MM/AAAA">              
                 </div>
               </div>
                 <br>
-
-                <div class="row">
-                       <div class="form-row col-md-4" id="agencia_licenca">
+                <div class="row" id="agencia">
+                       <div class="form-row col-md-4"  >
                         <label for="">Agência Reguladora</label>
                         <input type="text" name="agencia_licenca" class="form-control" id="agencia_licenca" placeholder="Ex.: ANAC" required="true">
                     </div>
-                    <div class="form-row col-md-4">
+                    <div class="form-row col-md-4" id="habilitacoes">
                         <label for="">Habilitações</label>
                         <input type="text" name="habilitacoes" class="form-control" id="habilitacoes" required="true">
                     </div>
-                    <div class="form-row col-md-3">
+                    <div class="form-row col-md-3" id="total_horas_voadas">
                         <label for="">Total de horas voadas</label>
                         <input type="text" name="total_horas_voadas" class="form-control" id="total_horas_voadas" placeholder="Ex.: 1.550,00" required="true">
                         <!-- Adicionar máscara NN.NNN,NN -->
@@ -125,9 +118,16 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                             $('#total_horas_voadas').mask('NN.NNN,NN');
                                  });
                         </script>
+                    </div>
                 </div>
-                </div>
+                <br>
               <!-- Botão de adicionar, o usuário poderá preencher mais de uma habilitação -->    
+              <div class="row">
+            <div class="form-row col-md-3 pull-right">        
+                <button type="submit" id="button" class="btn btn-primary  pull-right">Adicionar</i> </button>
+                </div>
+                </div>
+            
             </section>
 
             <h3>Experiências e treinamentos</h3>
@@ -175,11 +175,6 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
 
             <h3>Histórico de acidentes</h3>
             <section>
-            <div class="row">
-            <div class="form-row col-md-3 pull-right">        
-                <button type="submit" id="btnSubmit" value="submit" class="btn btn-primary  add-more-btn pull-right">Adicionar</i> </button>
-                </div>
-                </div>
                 <div class="row">
                 <div class="form-row col-md-6">
                     <label>Sofreu algum acidente/indicente nos últimos 5 anos?</label>
@@ -248,11 +243,19 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 <div class="row">
                     <div class="form-row col-md-6" id="detalhes_ocorridos">
                         <label for="">Descreva em detalhes o ocorrido</label>
-                        <textarea cols="70" rows="10" maxlength="30" placeholder="Ex.: Descreva o máximo possível os detalhes do ocorrido" name="detalhes_ocorridos" id="detalhes_ocorridos" class="form_control" required="true"></textarea>
-
+                        <textarea cols="60" rows="10" maxlength="41" placeholder="Ex.: Descreva o máximo possível os detalhes do ocorrido" name="detalhes_ocorridos" id="detalhes_ocorridos" class="form_control" required="true"></textarea>
+                        <button class="btn btn-primary"><i class="fa fa-plus"></i></button> 
                     </div>
                     <!-- incluir o botão de adicionar, o usuário poderá preencher mais de um ocorrido -->
                 </div>
+                <script>
+                    $(document).ready(function(){
+                    $("button").click(function(){
+                    $("#detalhes_ocorridos").clone();
+                    });
+                    });
+                  
+                </script>
             </section>
 
             <h3>Operador atual</h3>

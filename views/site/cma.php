@@ -82,7 +82,12 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
             </section>
 
             <h3>Licenças e habilitações</h3>
-            <section>
+            <section >
+            <div class="row">
+            <div class="form-row col-md-3 pull-right">        
+                <button type="submit" id="btnSubmit" value="submit" class="btn btn-primary  pull-right">Adicionar</i> </button>
+                </div>
+                </div>
                 <div class="row">
                        <div class="form-row col-md-4">
                         <label for="">Agência Reguladora</label>
@@ -94,16 +99,16 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                         
                     </div>
 
-                    <div class="form-row col-md-4">
+                    <div class="form-row col-md-3">
                         <label for="">Data de expedição</label>
                         <input type="date" id="data_expedicao_licenca" name="data_expedicao_licenca" class="form-control" placeholder="DD/MM/AAAA">
                                 
                 </div>
-                </div>
-                <br><br>
+              </div>
+                <br>
 
                 <div class="row">
-                       <div class="form-row col-md-4">
+                       <div class="form-row col-md-4" id="agencia_licenca">
                         <label for="">Agência Reguladora</label>
                         <input type="text" name="agencia_licenca" class="form-control" id="agencia_licenca" placeholder="Ex.: ANAC" required="true">
                     </div>
@@ -111,7 +116,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                         <label for="">Habilitações</label>
                         <input type="text" name="habilitacoes" class="form-control" id="habilitacoes" required="true">
                     </div>
-                    <div class="form-row col-md-4">
+                    <div class="form-row col-md-3">
                         <label for="">Total de horas voadas</label>
                         <input type="text" name="total_horas_voadas" class="form-control" id="total_horas_voadas" placeholder="Ex.: 1.550,00" required="true">
                         <!-- Adicionar máscara NN.NNN,NN -->
@@ -120,13 +125,18 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                             $('#total_horas_voadas').mask('NN.NNN,NN');
                                  });
                         </script>
-                    </div>
-                    <!-- Botão de adicionar, o usuário poderá preencher mais de uma habilitação -->
                 </div>
+                </div>
+              <!-- Botão de adicionar, o usuário poderá preencher mais de uma habilitação -->    
             </section>
 
             <h3>Experiências e treinamentos</h3>
             <section>
+            <div class="row">
+            <div class="form-row col-md-3 pull-right">        
+                <button type="submit" id="btnSubmit" value="submit" class="btn btn-primary  add-more-btn pull-right">Adicionar</i> </button>
+                </div>
+                </div>
                 <div class="row">
                     <div class="form-row col-md-4">
                         <label for="">Horas voadas no último ano</label>
@@ -137,6 +147,9 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                         <label for="">Nome do treinamento</label>
                         <input type="text" name="nome_treinamento" class="form-control" id="nome_treinamento" placeholder="Ex.: IFR-A" required="true">
                     </div>
+                    </div>
+                    <br>
+                    <div class="row">
                     <div class="form-row col-md-4">
                         <label for="">Tipo do treinamento</label>
                         <select id="input_tipo_treinamento" class="form-control" required="true">
@@ -150,21 +163,23 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                             <option>Artigos perigosos</option>
                         </select>
                     </div>
-                    <div>
-                    <br>
-                
-                    <div class= "row">
+                    
                         <div class="form-row col-md-4">
                             <label for="">Data de conclusão</label>
                             <input type="date" id="data_conclusao_curso" name="data_conclusao_curso" class="form-control" placeholder="DD/MM/AAAA">
                         </div>
                         <!-- adicionar botão de mais, para que possa preencher mais de um curso -->
-                    </div>
+                
                 </div>
             </section>
 
             <h3>Histórico de acidentes</h3>
             <section>
+            <div class="row">
+            <div class="form-row col-md-3 pull-right">        
+                <button type="submit" id="btnSubmit" value="submit" class="btn btn-primary  add-more-btn pull-right">Adicionar</i> </button>
+                </div>
+                </div>
                 <div class="row">
                 <div class="form-row col-md-6">
                     <label>Sofreu algum acidente/indicente nos últimos 5 anos?</label>
@@ -516,7 +531,10 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                         <label for="">Número de série</label>
                         <input type="text" name="numero_serie" id="numero_serie" class="form-control" placeholder="Ex.: 86987542" required="true">
                     </div>
-                    <div class="form-row col-md-3" id="pmd">
+                    </div>
+                    </br>
+                    <div class="row">
+                    <div class="form-row col-md-2" id="pmd">
                         <label for="">PMD</label>
                         <input type="text" name="pmd" id="pmd" class="form-control" placeholder="Ex.: 4800 kg" required="true">
                     </div>
@@ -529,14 +547,14 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                         <label for="">Número de passageiros</label>
                         <input type="number" name="numero_passageiros" id="numero_passageiros" class="form-control" placeholder="Ex.: 5" required="true">
                     </div>
-                    </div>
-                    <br>
-                    <div class="row">
                     <div class="form-row col-md-3" id="numero_tripulante">
                         <label for="">Número de tripulantes</label>
                         <input type="number" name="numero_tripulante" id="numero_tripulante" class="form-control" placeholder="Ex.: 2" required="true">
-                    </div>
-                    <div class="form-row col-md-3" id="numero_motores">
+                        </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="form-row col-md-3" id="numero_motores">
                         <label for="">Número de motores</label>
                         <input type="number" name="numero_motores" id="numero_motores" class="form-control" placeholder="Ex.: 2" required="true">
                     </div>
@@ -544,43 +562,42 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                         <label for="">Tipo de Habilitação para Pilotos</label>
                         <input type="text" name="tipo_habilitacao" id="tipo_habilitacao" class="form-control" placeholder="Ex.: MNTE" required="true">
                     </div>
-                    </div>
-                    <br>
-                    <div class="row">
                     <div class="form-row col-md-3" id="horas_totais_celula">
                         <label for="">Horas totais de célula</label>
                         <input type="number" name="horas_totais_celula" id="horas_totais_celula" class="form-control" placeholder="Ex.: 5772" required="true">
                     </div>
-                    <div class="form-row col-md-4" id="horas_totais_motor">
-                        <label for="">Horas totais do(s) motor(es)</label>
-                        <input type="number" name="horas_totais_motor" id="horas_totais_motor" class="form-control" placeholder="Ex.: 5772" required="true">
-                    </div>
-                    <div class="form-row col-md-4" id="validade_iam">
-                        <label for="">Validade do IAM</label>
-                        <input type="date" name="validade_iam" id="validade_iam" class="form-control" placeholder="EX.: DD/MM/AAAA" required="true">
-                    </div>
                     </div>
                     <br>
                     <div class="row">
-                    <div class="form-row col-md-3" id="horas_totais_doze_meses">
+                    <div class="form-row col-md-3" id="horas_totais_motor">
+                        <label for="">Horas totais do(s) motor(es)</label>
+                        <input type="number" name="horas_totais_motor" id="horas_totais_motor" class="form-control" placeholder="Ex.: 5772" required="true">
+                    </div>
+                    <div class="form-row col-md-3" id="validade_iam">
+                        <label for="">Validade do IAM</label>
+                        <input type="date" name="validade_iam" id="validade_iam" class="form-control" placeholder="EX.: DD/MM/AAAA" required="true">
+                    </div>
+                    <div class="form-row col-md-4" id="horas_totais_doze_meses">
                         <label for="">Horas totais nos últimos 12 meses</label>
                         <input type="number" name="horas_totais_doze_meses" class="form-control" id="horas_totais_doze_meses" placeholder="Ex.: 540" required="true">
-                    </div>
-                    <div class="form-row col-md-3" id="horas_estimadas_doze_meses">
-                        <label for="">Horas estimadas para os próximos 12 meses</label>
-                        <input type="number" name="horas_estimadas_doze_meses" id="horas_estimadas_doze_meses" class="form-crontol" placeholder="Ex.: 780" required="true">
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="form-row col-md-6" id="oficina_revisao_motores">
-                        <label for="">Oficina onde foi realizada a última revisão geral dos motores</label>
-                        <input type="text" name="oficina_revisao_motores" id="oficina_revisao_motores" placeholder="AEROBAT Oficina de Manutenção Aeronáutica" required="true">
+                      </div>
                     </div>
                     <br>
-                    <div class="form-row col-md-6" id="oficina_ultima_iam"> 
+                    <div class="row">
+                    <div class="form-row col-md-5" id="horas_estimadas_doze_meses">
+                        <label for="">Horas estimadas para os próximos 12 meses</label>
+                        <input type="number" name="horas_estimadas_doze_meses" class="form-control" id="horas_estimadas_doze_meses" class="form-crontol" placeholder="Ex.: 780" required="true">
+                    </div>
+                    <div class="form-row col-md-6" id="oficina_revisao_motores">
+                        <label for="">Oficina onde foi realizada a última revisão geral dos motores</label>
+                        <input type="text" name="oficina_revisao_motores" class="form-control" id="oficina_revisao_motores" placeholder="AEROBAT Oficina de Manutenção Aeronáutica" required="true">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                    <div class="form-row col-md-5" id="oficina_ultima_iam"> 
                         <label for="">Oficina onde foi realizada a última IAM</label>
-                        <input type="text" name="oficina_ultima_iam" id="oficina_ultima_iam" placeholder="AEROBAT Oficina de Manutenção Aeronáutica" required="true">
+                        <input type="text" name="oficina_ultima_iam" class="form-control" id="oficina_ultima_iam" placeholder="AEROBAT Oficina de Manutenção Aeronáutica" required="true">
                     </div>
                 </div>
                 <!-- fim das opções após selecionar qualquer outra opção, menos linha aérea -->
@@ -589,9 +606,10 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
             <h3>Beneficiários</h3>
             <section>
                 <div class="row">
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4">
                         <label for="">Quantos serão os beneficiários?</label>
                         <select id="numero_beneficiarios" class="form-control" required="true">
+                            <option>Selecionar</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -602,21 +620,24 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                             <option>8</option>
                             <option>9</option>
                             <option>10</option>
+                            </select>
                     </div>
-                    <br>
-                    <div class="form-row col-md-2">
+                    
+                    <div class="form-row col-md-4">
                         <label for="">Data de nascimento</label>
-                        <input type="date" name="data_nascimento_beneficiario" id="data_nascimento_benecificario" required="true">
+                        <input type="date" name="data_nascimento_beneficiario" id="data_nascimento_benecificario" class="form-control" required="true">
                     </div>
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-4">
                         <label for="">Grau de parentesco</label>
                         <select id="grau_parentesco" class="form-control" required="true">
+                            <option>Selecionar</option>
                             <option>1° Grau</option>
                             <option>2° Grau</option>
                             <option>3° Grau</option>
                             <option>Familiar distante</option>
                             <option>Amigo</option>
                             <option>Conjuge</option>
+                            </select>
                     </div>
                 </div>
             </section>
@@ -628,9 +649,9 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
 
                 <p>Obrigado e conte com a SEGOP</p>
                 <!-- Adicionar uma âncora para que ao clicar em adicionar outro tripulante volte para a primeira tela do wizard -->
-                <button type="button" class="btn btn-primary" href="/site/cma">Adicionar outro tripulante</button>
+                <button type="button" onclick="window.location='cma';" value="click here" class="btn btn-primary">Adicionar outro tripulante</button>
 
-                <button type="button" class="btn btn-primary" href="/">Pagina Inicial</button>
+                <button type="button" onclick="window.location='/';" value="click here" class="btn btn-primary">Pagina Inicial</button>
             </center>
         </section>
         </div>

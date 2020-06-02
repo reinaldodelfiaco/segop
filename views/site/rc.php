@@ -11,8 +11,7 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                     <div class="col-md-4 ">
                         <label for="inputNatureza">Natureza das operações</label>
                         <!-- colocar multipla escolha -->
-                        <select id="inputNatureza" class="form-control">
-                            <option selected>Escolher...</option>
+                        <select multiple id="inputNatureza" class="form-control">
                             <option>Hangaragem</option>
                             <option>Centro de Instrução</option>
                             <option>Operações Agrícolas</option>

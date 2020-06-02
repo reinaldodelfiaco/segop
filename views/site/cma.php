@@ -87,22 +87,21 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                        <div class="form-row col-md-4">
                         <label for="">Agência Reguladora</label>
                         <input type="text" name="agencia_licenca" class="form-control" id="agencia_licenca" placeholder="Ex.: ANAC" required="true">
-                    </div>
+                         </div>
                     <div class="form-row col-md-4">
                         <label for="">Licença</label>
                         <input type="text" name="licenca" class="form-control" id="licenca"  required="true">
                         
                     </div>
+
                     <div class="form-row col-md-4">
                         <label for="">Data de expedição</label>
                         <input type="date" id="data_expedicao_licenca" name="data_expedicao_licenca" class="form-control" placeholder="DD/MM/AAAA">
-                    </div>
-                    <!-- Botão de adicionar, o usuário poderá preencher mais de uma licença -->
-
+                                
                 </div>
-                
-                <br>
-                <div>
+                </div>
+                <br><br>
+
                 <div class="row">
                        <div class="form-row col-md-4">
                         <label for="">Agência Reguladora</label>
@@ -166,19 +165,42 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
 
             <h3>Histórico de acidentes</h3>
             <section>
-                <div class="form-group">
-                    <label class="col-lg-6 control-label">Sofreu algum acidente/indicente nos últimos 5 anos?</label>
-                    <div class="col-lg-4">
-                        <label class="radio-inline">
-                            <input type="radio" name="radio"> Sim </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="radio"> Nâo</label>
-                    </div>
+                <div class="row">
+                <div class="form-row col-md-4">
+                    <label>Sofreu algum acidente/indicente nos últimos 5 anos?</label>
+
+                    <select id="input_tipo_acidente" class="form-control" required="true">
+                            <option selected>Selecione..</option>
+                            <option value="sim">Sim</option>
+                            <option value="Não">Não</option>
+                            </select>
                 </div>
-                <br><br>
+                </div>
+                <script>
+                    $("#input_tipo_acidente").change(function() {
+                        $('#classificacao_situacao').hide();
+                        if(this.value == "sim")
+                        $('#classificacao_situacao').show();
+                    
+                    });
+                    $("#input_tipo_acidente").change(function() {
+                        $('#marca_aeronave').hide();
+                        if(this.value == "sim")
+                        $('#marca_aeronave').show();
+                    
+                    });
+                    $("#input_tipo_acidente").change(function() {
+                        $('#detalhes_ocorridos').hide();
+                        if(this.value == "sim")
+                        $('#detalhes_ocorridos').show();
+                    
+                    });
+                  
+                </script>
+                <br>
                 <!-- Se sim, abrir as opções a seguir -->
                 <div class="row">
-                    <div class="form-row col-md-4">
+                    <div class="form-row col-md-4" id="classificacao_situacao">
                         <label for="">Classificação da situação</label>
                         <select id="classificacao_situacao" class="form-control" required="true">
                             <option selected>Selecione..</option>
@@ -186,7 +208,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                             <option>Incidente</option>
                         </select>
                     </div>
-                    <div class="form-row col-md-4">
+                    <div class="form-row col-md-4" id="marca_aeronave">
                         <label for="">Marca da aeronave</label>
                         <input type="text" name="marca_aeronave" id="marca_aeronave" class="form-control" placeholder="Ex.: PP-PPP" required="true">
                         <!-- Incluir  a API da Embarque Tec -->
@@ -194,7 +216,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 </div>
                 <br>
                 <div class="row">
-                    <div class="form-row col-md-6">
+                    <div class="form-row col-md-6" id="detalhes_ocorridos">
                         <label for="">Descreva em detalhes o ocorrido</label>
                         <textarea cols="70" rows="10" maxlength="30" placeholder="Ex.: Descreva o máximo possível os detalhes do ocorrido" name="detalhes_ocorridos" id="detalhes_ocorridos" class="form_control" required="true"></textarea>
 
@@ -209,30 +231,53 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     <div class="form-row col-md-4">
                         <label for="">Selecione o tipo de operação</label>
                         <select id="tipo_operacao" class="form-control" required="true">
-                            <option>Geral/Executiva</option>
-                            <option>Centro de Instrução</option>
-                            <option>Agrícola</option>
-                            <option>Táxi Aéreo</option>
-                            <option>Linha Aérea</option>
+                            <option value="geral_executiva">Geral/Executiva</option>
+                            <option value="centro_instituicao">Centro de Instrução</option>
+                            <option value="agricola">Agrícola</option>
+                            <option value="taxi">Táxi Aéreo</option>
+                            <option value="linha_aerea">Linha Aérea</option>
                         </select>
                     </div>
                 </div>
                 <br>
                 <!-- início das opções após selecionar a linha aérea -->
-                <div class="row">
-                    <div class="form-row col-md-6">
-                        <label for="">Operador</label>
-                        <input type="text" name="nome_operador" id="nome_operador" class="form-control" placeholder="Ex.: SETE Táxi Aéreo LTDA" required="true">
-                    </div>
-                </div>
+                <script>
+                    $("#tipo_operacao").change(function() {
+                        $('#nome_operador').hide();
+                        if(this.value == "linha_aerea")
+                        $('#nome_operador').show();
+
+                    });
+
+                    $("#tipo_operacao").change(function() {
+                        $('#quantidade_aeronaves_operador').hide();
+                        if(this.value == "linha_aerea")
+                        $('#quantidade_aeronaves_operador').show();
+
+                    });
+
+                    $("#tipo_operacao").change(function() {
+                        $('#funcao_bordo').hide();
+                        if(this.value == "linha_aerea")
+                        $('#funcao_bordo').show();
+
+                    });
+                    
+               </script>
                 <br>
                 <div class="row">
-                    <div class="form-row col-md-4">
-                        <label for="">Quantas aeronaves esse operador possui?</label>
-                        <input type="number" name="quantidade_aeronaves_operador" id="quantidade_aeronaves_operador" placeholder="Ex.: 17" required="true">
+                    <div class="form-row col-md-4" id="nome_operador">
+                        <label for="">Operador</label>
+                        <input type="text" name="nome_operador" id="nome_operador" class="form-control" placeholder="Ex.: Sete táxi aéreo LTDA" required="true">
                     </div>
-
-                    <div class="form-row col-md-4">
+                    <div class="form-row col-md-6" id="quantidade_aeronaves_operador">
+                        <label for="">Quantas aeronaves esse operador possui?</label>
+                        <input type="number" name="quantidade_aeronaves_operador" id="quantidade_aeronaves_operador" class="form-control" placeholder="Ex.: 17" required="true">
+                    </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                    <div class="form-row col-md-4" id="funcao_bordo">
                         <label for="">Qual a sua função a bordo?</label>
                         <select id="funcao_bordo" class="form-control" required="true">
                             <option>Comandante</option>
@@ -240,10 +285,34 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                             <option>Engenheiro(a) de voo</option>
                             <option>Mecânico(a)</option>
                             <option>Comissário(a)</option>
+                            </select>
                     </div>
                 </div>
                 <br>
                 <!-- fim das opções após selecionar a linha aérea -->
+                <script>
+                    $("#tipo_operacao").change(function() {
+                        $('#nome_operador').hide();
+                        if(this.value == "linha_aerea")
+                        $('#nome_operador').show();
+
+                    });
+
+                    $("#tipo_operacao").change(function() {
+                        $('#quantidade_aeronaves_operador').hide();
+                        if(this.value == "linha_aerea")
+                        $('#quantidade_aeronaves_operador').show();
+
+                    });
+
+                    $("#tipo_operacao").change(function() {
+                        $('#funcao_bordo').hide();
+                        if(this.value == "linha_aerea")
+                        $('#funcao_bordo').show();
+
+                    });
+                    
+               </script>
                 <!-- início das opções após selecionar qualquer outra opção, menos linha aérea -->
                 <div class="row">
                     <div class="form-row col-md-4">
@@ -315,11 +384,11 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 <div class="row">
                     <div class="form-row col-md-2">
                         <label for="">Validade do IAM</label>
-                        <input type="date" name="validade_iam" id="validade_iam" placeholder="EX.: DD/MM/AAAA" required="true"
+                        <input type="date" name="validade_iam" id="validade_iam" placeholder="EX.: DD/MM/AAAA" required="true">
                     </div>
                     <div class="form-row col-md-2">
                         <label for="">Horas totais nos últimos 12 meses</label>
-                        <input type="number" name="horas_totais_doze_meses" id="horas_totais_doze_meses" placeholder="Ex.: 540" required="true"
+                        <input type="number" name="horas_totais_doze_meses" id="horas_totais_doze_meses" placeholder="Ex.: 540" required="true">
                     </div>
                     <div class="form-row col-md-2">
                         <label for="">Horas estimadas para os próximos 12 meses</label>

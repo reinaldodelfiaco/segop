@@ -11,13 +11,13 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                     <div class="col-md-4 ">
                         <label for="inputNatureza">Natureza das operações</label>
                         <!-- colocar multipla escolha -->
-                        <select multiple id="inputNatureza" class="form-control">
-                            <option>Hangaragem</option>
-                            <option>Centro de Instrução</option>
-                            <option>Operações Agrícolas</option>
-                            <option>Oficina de Manutenção</option>
-                            <option>Táxi Aéreo</option>
-                            <option>Linha Aérea</option>
+                        <select multiple="" id="inputNatureza" class="form-control">
+                            <option value="1">Hangaragem</option>
+                            <option value="2">Centro de Instrução</option>
+                            <option value="3">Operações Agrícolas</option>
+                            <option value="4">Oficina de Manutenção</option>
+                            <option value="5">Táxi Aéreo</option>
+                            <option value="6">Linha Aérea</option>
                         </select>
                     </div>
                     <div class="form-row col-md-6">
@@ -29,13 +29,10 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                 </div>
                 <br>
                 <div class="row">
-                    <div class="col-md-4 ">
+                    <div class="col-md-3 ">
                         <label for="">Quando iniciou as operações?</label>
                         <input type="date" name="data" class="form-control"  id="data"  required="true">
                     </div>
-                </div>
-                <br>
-                <div class="row">
                     <div class="form-row col-md-6 ">
                         <label for="">Qual a quantidade de hangares que você opera?</label>
                         <div class="col-md-4">
@@ -58,10 +55,50 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                 </div>
                 <br><br>
                 <div class="row">
-                    <div class="form-row col-md-2">
+                    <div class="form-row col-md-3">
                         <label for="CEP">CEP</label>
                         <input id="cep" name="cep"  class="form-control cep-mask" placeholder="Ex.: 00000-000" required="true" value="" type="search" maxlength="8" pattern="[0-9]+$">
                     </div>  
+                    <div class="col-md-4">
+                            <label for="">Cidade</label>
+                            <input type="text" name="cidade" id="cidade" class="form-control" required="true">                    
+                    </div>
+                    <div class="col-md-3">
+                            <label for="">Estado</label>
+                                <select  id="uf" name="uf" class="form-control" required="true">
+                                    <option>Selecionar</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                                </div>
+                            </div>
+                        <br>
+                    <div class="row">
                     <div class="col-md-4">
                         <label for="">Endereço</label>
                         <input type="text" name="rua" id="rua" class="form-control" required="true">                         
@@ -77,38 +114,30 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                     <div class="col-md-2">
                         <label for="">Bairro</label>
                         <input type="text" name="bairro" id="bairro" class="form-control" required="true">
-                    </div>                                   
-                </div> 
-                <br>
-                <div class="row">
-                    <div class="col-md-4">
-                            <label for="">Cidade</label>
-                            <input type="text" name="cidade" id="cidade" class="form-control" required="true">                    
-                    </div>
-                    <div class="col-md-2">
-                            <label for="">Estado</label>
-                                <input type="text" name="uf" id="uf" class="form-control" required="true">
-                    </div> 
+                    </div>                                        
                 </div>
                 <br>
                 <div class="row">
                     <div class="col-md-4 ">
                         <label for="">Realiza abastecimento de Aeronave?</label><br>
                         <select id="inputAbastecimento" class="form-control " >
+                            <option>Selecione</option>
                             <option>Sim</option>
                             <option>Não</option>
                         </select>
                     </div>                             
                     <div class="col-md-4 ">
                         <label for="">Você é o responsável por esta atividade?</label><br>
-                            <select id="inputAtividade" class="form-control ">
+                            <select id="inputAtividade" class="form-control">
+                            <option>Selecione</option>
                             <option>Sim</option>
                             <option>Não</option>
                         </select>
                     </div>  
                     <div class="col-md-4 form-row">
-                        <label for="">Existem compressor(es) no hangar?</label><br>
+                        <label for="">Existem compressor(es) no hangar?</label>
                         <select id="inputCompressor" class="form-control">
+                        <option>Selecione</option>
                             <option>Sim</option>
                             <option>Não</option>
                         </select>
@@ -416,43 +445,80 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                             </div>
                             <br>
                             <div class="row">
-                                <div class="form-row col-md-4">
+                                <div class="form-row col-md-3">
                                     <label for="">CPF/CNPJ</label>
                                     <input type="text"  name="cpf" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00 " id="cpf"  required="true">
                                 </div>
-                                <div class="form-row col-md-4">
+                                <div class="form-row col-md-3">
                                     <label for="">Telefone</label>
                                     <input type="text" name="telefone" class="form-control phone-mask" placeholder="Ex.: 0000-0000" id="telefone"  required="true">
                                 </div>
-                                <div class="form-row col-md-4">
+                                <div class="form-row col-md-3">
                                     <label for="">Celular</label>
                                     <input type="text" name="celular" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000" id="celular"  required="true">
                                 </div>
                             </div>
                             <br>
                             <div class="row">
-                                <div class="form-row col-md-4">
+                                <div class="form-row col-md-3">
                                     <label for="CEP">CEP</label>
                                      <input id="cep" name="cep"  class="form-control cep-mask" placeholder="Ex.: 00000-000" required="true" value="" type="search" maxlength="8" pattern="[0-9]+$">
                                 </div>     
-                            </div>            
-                            <br>
-                            <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="">Cidade</label>
                                         <input type="text" name="cidade" id="cidade" class="form-control" required="true">
                                     </div>
+                                 </div>
+                                    <div class="col-md-3">
+                                     <label for="">Estado</label>
+                                      <select  id="uf" name="uf" class="form-control" required="true">
+                                            <option>Selecionar</option>
+                                            <option value="AC">Acre</option>
+                                            <option value="AL">Alagoas</option>
+                                            <option value="AP">Amapá</option>
+                                            <option value="AM">Amazonas</option>
+                                            <option value="BA">Bahia</option>
+                                            <option value="CE">Ceará</option>
+                                            <option value="DF">Distrito Federal</option>
+                                            <option value="ES">Espírito Santo</option>
+                                            <option value="GO">Goiás</option>
+                                            <option value="MA">Maranhão</option>
+                                            <option value="MT">Mato Grosso</option>
+                                            <option value="MS">Mato Grosso do Sul</option>
+                                            <option value="MG">Minas Gerais</option>
+                                            <option value="PA">Pará</option>
+                                            <option value="PB">Paraíba</option>
+                                            <option value="PR">Paraná</option>
+                                            <option value="PE">Pernambuco</option>
+                                            <option value="PI">Piauí</option>
+                                            <option value="RJ">Rio de Janeiro</option>
+                                            <option value="RN">Rio Grande do Norte</option>
+                                            <option value="RS">Rio Grande do Sul</option>
+                                            <option value="RO">Rondônia</option>
+                                            <option value="RR">Roraima</option>
+                                            <option value="SC">Santa Catarina</option>
+                                            <option value="SP">São Paulo</option>
+                                            <option value="SE">Sergipe</option>
+                                            <option value="TO">Tocantins</option>
+                                     </select>
+                                    </div>
                                 </div>
+                                <br>
+                                <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
+                                        <label for="">Endereço</label>
+                                        <input type="text" name="endereco" id="endereco" class="form-control" required="true">
+                                    </div>
+                                    </div>
+                                     <div class="col-md-3">
+                                          <div class="form-group">
                                         <label for="">Bairro</label>
                                         <input type="text" name="bairro" id="bairro" class="form-control" required="true">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-row col-md-4">
+                                <div class="form-row col-md-3">
                                     <label for="">Complemento</label>
                                         <input type="text" name="complemento" class="form-control" id="complemento"  required="true">
                                 </div>

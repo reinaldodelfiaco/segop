@@ -10,11 +10,11 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
             <div class="row">
                     <div class="form-row col-md-4">
                         <label for="">Nome completo</label>
-                        <input type="text" name="nome" class="form-control " id="nome"  required="true">
+                        <input type="text" name="nome" class="form-control  " id="nome"  required="true" >
                     </div>
                     <div class="form-row col-md-4">
                         <label for="">E-mail</label>
-                        <input type="text" name="email" class="form-control md-form" id="email"  required="true">
+                        <input type="text" name="email" class="form-control" id="email"  required="true">
                     </div>
                 </div>
                 <br>
@@ -105,9 +105,8 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 <br>
                     <div class="row">
                     <div class="form-row col-md-4" id="habilitacoes">
-                        <label for="">Habilitações</label>
+                        <label for="">Habilitação</label>
                         <input type="text" name="habilitacoes" class="form-control" id="habilitacoes" required="true">
-
                     </div>
                     
                     <div class="form-row col-md-3" id="total_horas_voadas">

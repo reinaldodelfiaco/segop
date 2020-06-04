@@ -19,22 +19,22 @@ $this->title = "SEGOP";
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for=""> Operador</label>
-                            <input type="text" name="operador" id="operador" class="form-control" required="true">
+                            <input type="text" name="operador" id="operador" class="form-control" placeholder="Ex.: Sete táxi aéreo LTDA" required="true">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-row col-md-3">
                         <label for="">Modelo</label>
-                        <input type="text" name="modelo" class="form-control" id="modelo"  required="true">
+                        <input type="text" name="modelo" class="form-control" id="modelo" placeholder="Ex.: C172" required="true">
                     </div>
                     <div class="form-row col-md-3">
                         <label for="">Número de Série</label>
-                        <input type="text" name="numeroSerie" class="form-control" id="numeroSerie"  required="true">
+                        <input type="text" name="numeroSerie" class="form-control" placeholder="Ex.: 86987542" id="numeroSerie"  required="true">
                     </div>
                     <div class="form-row col-md-3">
                         <label for="">PMD</label>
-                        <input type="text" name="pmd" class="form-control" id="pmd"  required="true">
+                        <input type="text" name="pmd" class="form-control" id="pmd" placeholder="Ex.: 4800 kg"  required="true">
                     </div>
                     <div class="form-row col-md-2">
                         <label for="">Ano</label>
@@ -46,7 +46,7 @@ $this->title = "SEGOP";
                     <div class="col-md-3">
                         <div class="form-group">
                             <label for="">Nº de Tripulates</label>
-                            <input type="text" name="nTripulantes" id="nTripulantes" class="form-control" required="true">
+                            <input type="number" name="nTripulantes" id="nTripulantes" placeholder="Ex.: 2" class="form-control" required="true">
                         </div>
                     </div>
                 </div>
@@ -139,8 +139,17 @@ $this->title = "SEGOP";
                     </div>
                     <div class="col-md-4 ">
                         <label for="">Treinamentos ?</label><br>
-                        <input type="text" class="form-control" id="treinamento" name="treinamento" placeholder="Ground School e Simuladores"  required="true">
-                    </div>
+                        <select id="input_tipo_treinamento" class="form-control" required="true">
+                            <option selected>Selecione..</option>
+                            <option>Simulador AATD</option>
+                            <option>Jet training</option>
+                            <option>Ground school</option>
+                            <option>SGSO</option>
+                            <option>AVSEC</option>
+                            <option>Treinamento na selva</option>
+                            <option>Artigos perigosos</option>
+                        </select>
+                        </div>
                 </div>
             </section>
 
@@ -184,28 +193,62 @@ $this->title = "SEGOP";
                             <input type="text" name="cidade" id="cidade" class="form-control" required="true">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <label for="">Endereço</label>
-                        <input type="text" name="endereco" id="endereco" class="form-control" required="true" placeholder="Ex.: Orfelino Reichel">
-                        </div>
-                    </div>
-                
-                <div class="row">
-                <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="">Bairro</label>
-                            <input type="text" name="bairro" id="bairro" class="form-control" required="true">
-                        </div>
-                        </div>
-                    <div class="form-row col-md-3">
-                        <label for="">Complemento</label>
-                        <input type="text" name="complemento" class="form-control" id="complemento"  required="true">
-                    </div>
-                    <div class="form-row col-md-2">
-                        <label for="">N°</label>
-                        <input type="text" name="numero" class="form-control" id="numero"  required="true">
-                    </div>
-                </div>
+                    <div class="col-md-3">
+                            <label for="">Estado</label>
+                                <select  id="uf" name="uf" class="form-control" required="true">
+                                    <option>Selecionar</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                                </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                            <div class="col-md-4">
+                                <label for="">Endereço</label>
+                                <input type="text" name="endereco" id="endereco" class="form-control" required="true" placeholder="Ex.: Orfelino Reichel">
+                                </div>
+                            
+                             <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="">Bairro</label>
+                                    <input type="text" name="bairro" id="bairro" class="form-control" required="true">
+                                </div>
+                                </div>
+                             <div class="form-row col-md-3">
+                                    <label for="">Complemento</label>
+                                    <input type="text" name="complemento" class="form-control" id="complemento"  required="true">
+                                </div>
+                            <div class="form-row col-md-2">
+                                <label for="">N°</label>
+                                <input type="number" name="numero" class="form-control" id="numero"  required="true">
+                              </div>
+                         </div>
             </section>
 
             <h3>Beneficiário</h3>
@@ -213,7 +256,7 @@ $this->title = "SEGOP";
                 <div class="row">
                     <div class="form-row col-md-4">
                         <label for="">Nome do beneficiário</label>
-                        <input type="text" name="nome_beneficiario" class="form-control" id="nome_beneficiario"  required="true">
+                        <input type="text" name="nome_beneficiario" class="form-control" id="nome_beneficiario" placeholder="Ex.: Fulano de Tal" required="true">
                     </div>
                     <div class="row">
                     <div class="col-md-4 ">
@@ -225,7 +268,10 @@ $this->title = "SEGOP";
 
             <h3>Enviar</h3>
             <section>
+
             <center>
+            <div class="jumbotron">
+
                 <p>Em breve você receberá um e-mail com a nossa cotação!</p>
 
                 <p>Obrigado e conte com a SEGOP</p>
@@ -234,7 +280,7 @@ $this->title = "SEGOP";
                 <button type="submit" class="btn btn-primary" href="/">Pagina Inicial</button>
                
                 </center>
-               
+               </div>
             </section>
         </div>
     </div>

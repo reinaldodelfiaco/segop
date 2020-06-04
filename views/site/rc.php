@@ -103,7 +103,7 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                         <label for="">Endereço</label>
                         <input type="text" name="rua" id="rua" class="form-control" required="true">                         
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label for="">Complemento</label>
                         <input type="text" name="complemento" id="complemento" class="form-control" required="true">
                     </div>  
@@ -169,15 +169,15 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                     <h4>Quais são as aeronaves hangariadas?</h3>
                     <div class="form-row col-md-4">
                         <label for="">Fabricante</label>
-                            <input id="fabricante" name="fabricante"  class="form-control" required="true">
+                            <input id="fabricante" name="fabricante"  placeholder="Ex.: Cessna"  class="form-control" required="true">
                     </div>  
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <label for="">Modelo</label>
-                        <input type="text" name="modelo" id="modelo" class="form-control" required="true">
+                        <input type="text" name="modelo" id="modelo" class="form-control" placeholder="Ex.: C172" required="true">
                     </div>                           
                     <div class="col-md-2">
                         <label for="">Quantidade</label>
-                        <input type="text" name="quantidade" id="quantidade" class="form-control" required="true">
+                        <input type="number" name="quantidade" id="quantidade" class="form-control" required="true">
                     </div>  
                 </div>
                 <br>            
@@ -373,18 +373,32 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                     <section>
                         <div class="row">
                             <div class="form-group">
-                                <label class="col-lg-10 control-label">Houve sinistro nos últimos 5 (cinco) anos?</label>
-                                    <div class="col-lg-6">
-                                        <label class="radio-inline">
-                                        <input type="radio" name="radio"> Sim </label>
-                                        <label class="radio-inline">
-                                        <input type="radio" name="radio"> Nâo</label>
-                                    </div>
+                                <label class="col-lg-5 control-label">Houve sinistro nos últimos 5 (cinco) anos?</label>
+                                    <div class="col-md-3 col-sm-4">
+                                <select id="sinistro" class="form-control" required="true">
+                                            <option value="1">Selecione</option>
+                                            <option value="sim">Sim</option>
+                                            <option value="Não">Não</option>
+                                            </select>
+                                     </div>
                             </div>
                         </div>
+                            <script> 
+                              $(document).ready(function() {
+                                 $('#sinistros').hide();
+                                    $("#sinistro").change(function() {
+                                      if(this.value == "sim") {
+                                          $('#sinistros').show();
+                                      } else {
+                                        $('#sinistros').hide();
+                                      }
+                                 });
+                             });
+                            </script>
+
                         <br>
                         <div class="row">
-                            <div class="form-row col-md-4">
+                            <div class="form-row col-md-4" id="sinistros">
                                 <label for="">Por favor, detalhe cada um dos sinistros.</label>
                                 <textarea cols="60" rows="10" maxlength="30"></textarea>
                             </div>
@@ -413,18 +427,18 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                             <br>
                             <div class="row">
                                 <h4>Informe o valor segurado pretendido (limite máximo de indenização):</h4>
-                                <div class="col-md-4 ">
+                                <div class="col-md-3 ">
                                     <label for="">Moeda</label><br>
                                         <select id="inputMoeda" class="form-control ">
                                                 <option>USD</option>
                                                 <option>BRL</option>
                                         </select>
                                 </div>  
-                                <div class="form-row col-md-4">
+                                <div class="form-row col-md-3">
                                     <label for=""> Valor (R$)</label>
                                     <input type="text" name="valor" id="valor"  class="form-control" required="true">
                                 </div>
-                                <div class="form-row col-md-4">
+                                <div class="form-row col-md-3">
                                     <label for=""> Franquia (R$)</label>
                                     <input type="text" name="franquia" id="franquia"  class="form-control" required="true">
                                 </div>
@@ -538,7 +552,7 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                                     </div>
                                     <div class="form-row col-md-4">
                                         <label for="">CPF/CNPJ</label>
-                                        <input type="text" name="documento_benecificario" class="form-control" id="documento_benecifiario" placeholder="Ex.: 04967145" require="true">
+                                        <input type="text" name="documento_benecificario" class="form-control" id="documento_benecifiario" placeholder="Ex.: 04967145030" require="true">
                                     </div>
                                 </div>
                             </section>
@@ -546,13 +560,16 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                         <h3>Enviar</h3>
                             <section>
                                 <center>
+                                <div class="jumbotron">
+
                                 <p>Em breve você receberá um e-mail com a nossa cotação!</p>
 
                                 <p>Obrigado e conte com a SEGOP</p>
                                         <!-- Adicionar uma âncora para que ao clicar em adicionar hangar volte para a primeira tela do wizard -->
-                                        <button type="button" class="btn btn-primary" href="/site/rc">Adicionar hangar</button>
+                                        <button type="button" onclick="window.location='rc';" class="btn btn-primary">Adicionar hangar</button>
             
-                                        <button type="button" class="btn btn-primary" href="/">Pagina Inicial</button>
+                                        <button type="button" class="btn btn-primary" onclick="window.location='/';">Pagina Inicial</button>
+                                        </div>
                                 </center>
                             </section>
                     </div>

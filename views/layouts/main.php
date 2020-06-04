@@ -153,7 +153,7 @@ AppAsset::register($this);
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6 contact-box">
-                    <h4>Contact Us</h4>
+                    <h4>Contato</h4>
                     <p><i class="fa fa-home"></i> Street #156 Burbank, Studio City Hollywood, California USA</p>
                     <p><i class="fa fa-phone"></i> +91 1234567890</p>
                     <p><i class="fa fa-envelope-o"></i> support@domain.com</p>

@@ -141,20 +141,23 @@
                             <input type="text" name="bairro" id="bairro" class="form-control" required="true">
                         </div>
                     </div>
-                    <div class="form-row col-md-2">
-                            <label for="">N°</label>
-                            <input type="number" name="numero" class="form-control" id="numero"  required="true">
-                    </div>
                         <div class="form-row col-md-3">
                             <label for="">Complemento</label>
                             <input type="text" name="complemento" class="form-control" id="complemento"  required="true">
                             </div>
+                            <div class="form-row col-md-2">
+                            <label for="">N°</label>
+                            <input type="number" name="numero" class="form-control" id="numero"  required="true">
+                    </div>
                     </div>
                 </section>
 
             <h3>Enviar</h3>
             <section>
+
                 <center>
+                            <div class="jumbotron">
+
                 <p>Em breve você receberá um e-mail com a nossa cotação!</p>
 
                 <p>Obrigado e conte com a SEGOP</p>
@@ -162,6 +165,7 @@
                 <button type="button" onclick="window.location='reta';" value="click here" class="btn btn-primary" >Adicionar aeronave</button>
                 
                 <button type="button" class="btn btn-primary" onclick="window.location='/';" value="click here">Pagina Inicial</button>
+                </div>
                 </center>
             </section>
         </div>

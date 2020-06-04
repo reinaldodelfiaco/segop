@@ -647,6 +647,8 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
         <h3>Enviar</h3>
         <section>
             <center>
+            <div class="jumbotron">
+
                 <p>Em breve você receberá um e-mail com a nossa cotação!</p>
 
                 <p>Obrigado e conte com a SEGOP</p>
@@ -654,6 +656,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 <button type="button" onclick="window.location='cma';" value="click here" class="btn btn-primary">Adicionar outro tripulante</button>
 
                 <button type="button" onclick="window.location='/';" value="click here" class="btn btn-primary">Pagina Inicial</button>
+                </div>
             </center>
         </section>
         </div>

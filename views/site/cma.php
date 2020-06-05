@@ -240,21 +240,17 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 </div>
                 <br>
                 <div class="row">
-                    <div class="form-row col-md-6" id="detalhes_ocorridos">
+                    <div class="form-row col-md-6 " id="detalhes_ocorridos" >
                         <label for="">Descreva em detalhes o ocorrido</label>
                         <textarea cols="60" rows="10" maxlength="41" placeholder="Ex.: Descreva o máximo possível os detalhes do ocorrido" name="detalhes_ocorridos" id="detalhes_ocorridos" class="form_control" required="true"></textarea>
-                        <button class="btn btn-primary"><i class="fa fa-plus"></i></button> 
+                       <button type="button" id="button" class="btn btn-primary" value="submit"><i class="fa fa-plus"></i></button>
                     </div>
+                   
                     <!-- incluir o botão de adicionar, o usuário poderá preencher mais de um ocorrido -->
                 </div>
-                <script>
-                    $(document).ready(function(){
-                    $("button").click(function(){
-                    $("#detalhes_ocorridos").clone().appendTo();  ;
-                    });
-                    });
+            
                   
-                </script>
+
             </section>
 
             <h3>Operador atual</h3>

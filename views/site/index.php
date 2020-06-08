@@ -92,12 +92,12 @@ $this->title = 'SEGOP';
                                     <div class="col-md-6 col-sm-12 search-col-padding">
                                         <label>Telefone</label>
                                         <input type="text" id="telefone" class="form-control" name="telefone"
-                                               placeholder="Ex. Fulano">
+                                               placeholder="Ex. (99) 0000-0000">
                                     </div>
                                     <div class="col-md-6 col-sm-12 search-col-padding">
                                         <label>E-mail</label>
                                         <input type="email" id="email" class="form-control" name="email"
-                                               placeholder="Ex. Fulano">
+                                               placeholder="Ex. fulano@hotmail.com">
                                     </div>
 
                                     <div class="clearfix"></div>
@@ -198,8 +198,8 @@ $this->title = 'SEGOP';
                     </div>
                 <div></div>
                 <div class="text-center">
-                    <button href="https://www.embarquetec.com.br/sistema-integrado-de-seguros-aeronauticos/">Saiba mais</button>
-                    <button href="https://apihomologacao.travelace.com.br/index.html#/">Para desenvolvedores</button>
+                    <button href="https://www.embarquetec.com.br/sistema-integrado-de-seguros-aeronauticos/ " class="search-button btn transition-effect">Saiba mais</button>
+                    <button href="https://apihomologacao.travelace.com.br/index.html#/" class="search-button btn transition-effect">Para desenvolvedores</button>
                 </div>
                 </div>
                 <div class="col-md-6">

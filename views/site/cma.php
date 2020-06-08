@@ -14,7 +14,11 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     </div>
                     <div class="form-row col-md-4">
                         <label for="">E-mail</label>
+                        <div class="input-group">
                         <input type="text" name="email" class="form-control" id="email"  required="true">
+                        <span class="input-group-addon"><i
+                                                        class="fa fa-envelope fa-fw"></i></span>
+                        </div>
                     </div>
                 </div>
                 <br>
@@ -44,11 +48,19 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     </div>
                     <div class="form-row col-md-3">
                         <label for="">Telefone</label>
+                        <div class="input-group">
                         <input type="text" name="telefone" class="form-control phone-mask" placeholder="Ex.: 0000-0000" id="telefone"  required="true">
+                        <span class="input-group-addon"><i
+                                                        class="fa fa-phone fa-fw"></i></span>
+                    </div>
                     </div>
                     <div class="form-row col-md-3">
                         <label for="">Celular</label>
+                        <div class="input-group">
                         <input type="text" name="celular" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000" id="celular"  reqrequired="true">
+                        <span class="input-group-addon"><i
+                                                        class="fa fa-mobile fa-fw"></i></span>
+                        </div>
                     </div>
                     </div>
                     <br>
@@ -60,7 +72,11 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     <div class="col-md-3">
                         <div class="form-group">
                             <label for="">Cidade</label>
+                            <div class="input-group">
                             <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Ex.: Goiânia" required="true">
+                            <span class="input-group-addon"><i
+                                                        class="fa fa-map-marker fa-fw"></i></span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -102,7 +118,11 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="">Endereço</label>
+                            <div class="input-group">
                             <input type="text" name="endereco" id="endereco" class="form-control"  required="true">
+                            <span class="input-group-addon"><i
+                                                        class="fa fa-home fa-fw"></i></span>
+                        </div>
                         </div>
                     </div>
                     <div class="form-row col-md-2">
@@ -148,8 +168,11 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     <div class="row">
                     <div class="form-row col-md-4 " id="habilitacoes">
                         <label for="">Habilitação</label>
+                        <div class="input-group">
                         <input type="text" name="habilitacoes" class="form-control" id="habilitacoes" required="true">
-                        <button id="b1" class="btn add-more" type="button">+</button>
+                        <span class="input-group-addon"><i
+                                                        class="fa fa-plus fa-fw"></i></span>
+                        </div>
                         </div>
                     
                     <div class="form-row col-md-3" id="total_horas_voadas">

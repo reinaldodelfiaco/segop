@@ -27,9 +27,9 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                         </div>
                     </div>
                 </div>
-                <br>
+                <br> <br>
                 <div class="row">
-                    <div class="col-md-3 ">
+                    <div class="col-md-4">
                         <label for="">Quando iniciou as operações?</label>
                         <input type="date" name="data" class="form-control"  id="data"  required="true">
                     </div>
@@ -61,7 +61,11 @@ $this->title = "SEGOP - Responsabilidade Civil Hangar e Serviços Aeroportuário
                     </div>  
                     <div class="col-md-4">
                             <label for="">Cidade</label>
-                            <input type="text" name="cidade" id="cidade" class="form-control" required="true">                    
+                            <div class="input-group">
+                            <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Ex. Goiania" required="true"> 
+                            <span class="input-group-addon"><i
+                                                        class="fa fa-map-marker fa-fw"></i></span> 
+                                             </div>
                     </div>
                     <div class="col-md-3">
                             <label for="">Estado</label>

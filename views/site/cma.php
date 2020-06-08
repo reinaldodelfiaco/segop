@@ -105,6 +105,10 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                             <input type="text" name="endereco" id="endereco" class="form-control"  required="true">
                         </div>
                     </div>
+                    <div class="form-row col-md-2">
+                        <label for="">N°</label>
+                        <input type="number" name="numero" class="form-control" id="numero" placeholder=""  required="true">
+                    </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label for="">Bairro</label>
@@ -115,10 +119,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                         <label for="">Complemento</label>
                         <input type="text" name="complemento" class="form-control" id="complemento" placeholder=""  required="true">
                     </div>
-                    <div class="form-row col-md-2">
-                        <label for="">N°</label>
-                        <input type="number" name="numero" class="form-control" id="numero" placeholder=""  required="true">
-                    </div>
+                  
                 </div>
             </section>
 
@@ -145,10 +146,11 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
               </div>
                 <br>
                     <div class="row">
-                    <div class="form-row col-md-4" id="habilitacoes">
+                    <div class="form-row col-md-4 " id="habilitacoes">
                         <label for="">Habilitação</label>
                         <input type="text" name="habilitacoes" class="form-control" id="habilitacoes" required="true">
-                    </div>
+                        <button id="b1" class="btn add-more" type="button">+</button>
+                        </div>
                     
                     <div class="form-row col-md-3" id="total_horas_voadas">
                         <label for="">Total de horas voadas</label>

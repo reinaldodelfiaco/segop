@@ -7,6 +7,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
         <div id="example-basic">
             <h3>Informações pessoais</h3>
             <section>
+            <form>
             <div class="row">
                     <div class="form-row col-md-4">
                         <label for="">Nome completo</label>
@@ -69,7 +70,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                         <label for="CEP">CEP</label>
                         <input id="cep" name="cep"  class="form-control cep-mask" placeholder="Ex.: 00000-000" required="true" value="" type="search" maxlength="8" pattern="[0-9]+$">
                     </div>     
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label for="">Cidade</label>
                             <div class="input-group">
@@ -79,10 +80,10 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="form-row col-md-3">
                                      <label for="">Estado</label>
-                                      <select  id="uf" name="uf" class="form-control" required="true">
-                                            <option>Selecionar</option>
+                                     <select class="mdb-select md-form form-control " id="uf">
+                                     <option value="" disabled selected>Selecione</option>
                                             <option value="AC">Acre</option>
                                             <option value="AL">Alagoas</option>
                                             <option value="AP">Amapá</option>
@@ -141,6 +142,7 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                     </div>
                   
                 </div>
+                </form>
             </section>
 
             <h3>Licenças e habilitações</h3>

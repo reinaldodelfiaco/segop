@@ -19,6 +19,10 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 </div>
                 <br>
                 <div class="row">
+                <div class="form-row col-md-3">
+                        <label for="">Data de Nascimento</label>
+                        <input type="date" id="data_nascimento" name="data_nascimento" class="form-control" placeholder="DD/MM/AAAA">
+                    </div>
                     <div class="form-row col-md-3">
                         <label for="">RG</label>
                         <input type="number" name="rg" class="form-control" placeholder="Ex.: 5968756987" id="rg" required="true">
@@ -35,10 +39,6 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 <br>
                 <div class="row">
                     <div class="form-row col-md-3">
-                        <label for="">Data de Nascimento</label>
-                        <input type="date" id="data_nascimento" name="data_nascimento" class="form-control" placeholder="DD/MM/AAAA">
-                    </div>
-                    <div class="form-row col-md-3">
                         <label for="">CPF</label>
                         <input type="text"  name="cpf" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00" id="cpf"  required="true">
                     </div>
@@ -46,13 +46,13 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                         <label for="">Telefone</label>
                         <input type="text" name="telefone" class="form-control phone-mask" placeholder="Ex.: 0000-0000" id="telefone"  required="true">
                     </div>
-                    </div>
-                    <br>
-                    <div class="row">
                     <div class="form-row col-md-3">
                         <label for="">Celular</label>
                         <input type="text" name="celular" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000" id="celular"  reqrequired="true">
                     </div>
+                    </div>
+                    <br>
+                    <div class="row">
                     <div class="form-row col-md-3">
                         <label for="CEP">CEP</label>
                         <input id="cep" name="cep"  class="form-control cep-mask" placeholder="Ex.: 00000-000" required="true" value="" type="search" maxlength="8" pattern="[0-9]+$">
@@ -63,16 +63,55 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                             <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Ex.: Goiânia" required="true">
                         </div>
                     </div>
+                    <div class="col-md-3">
+                                     <label for="">Estado</label>
+                                      <select  id="uf" name="uf" class="form-control" required="true">
+                                            <option>Selecionar</option>
+                                            <option value="AC">Acre</option>
+                                            <option value="AL">Alagoas</option>
+                                            <option value="AP">Amapá</option>
+                                            <option value="AM">Amazonas</option>
+                                            <option value="BA">Bahia</option>
+                                            <option value="CE">Ceará</option>
+                                            <option value="DF">Distrito Federal</option>
+                                            <option value="ES">Espírito Santo</option>
+                                            <option value="GO">Goiás</option>
+                                            <option value="MA">Maranhão</option>
+                                            <option value="MT">Mato Grosso</option>
+                                            <option value="MS">Mato Grosso do Sul</option>
+                                            <option value="MG">Minas Gerais</option>
+                                            <option value="PA">Pará</option>
+                                            <option value="PB">Paraíba</option>
+                                            <option value="PR">Paraná</option>
+                                            <option value="PE">Pernambuco</option>
+                                            <option value="PI">Piauí</option>
+                                            <option value="RJ">Rio de Janeiro</option>
+                                            <option value="RN">Rio Grande do Norte</option>
+                                            <option value="RS">Rio Grande do Sul</option>
+                                            <option value="RO">Rondônia</option>
+                                            <option value="RR">Roraima</option>
+                                            <option value="SC">Santa Catarina</option>
+                                            <option value="SP">São Paulo</option>
+                                            <option value="SE">Sergipe</option>
+                                            <option value="TO">Tocantins</option>
+                                     </select>
+                                    </div>
                     </div>
                     </br>
                     <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="">Endereço</label>
+                            <input type="text" name="endereco" id="endereco" class="form-control"  required="true">
+                        </div>
+                    </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label for="">Bairro</label>
                             <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Ex.: Setor Aeroporto" required="true">
                         </div>
                     </div>
-                        <div class="form-row col-md-4">
+                        <div class="form-row col-md-3">
                         <label for="">Complemento</label>
                         <input type="text" name="complemento" class="form-control" id="complemento" placeholder=""  required="true">
                     </div>
@@ -85,18 +124,20 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
 
             <h3>Licenças e habilitações</h3>
             <section >
-            <button type="button" class="btn btn-primary pull-right" id="add-campo"> + </button>
                 <div class="row">
                        <div class="form-row col-md-4" id="agencia_licenca">
                         <label for="">Agência Reguladora</label>
                         <input type="text" name="agencia_licenca" class="form-control" id="agencia_licenca" placeholder="Ex.: ANAC" required="true">
                          </div>
+                 
+                </div>
+                <br>
+                    <div class="row">
                     <div class="form-row col-md-4">
                         <label for="">Licença</label>
                         <input type="text" name="licenca" class="form-control" id="licenca"  required="true">
                         
                     </div>
-
                     <div class="form-row col-md-3">
                         <label for="">Data de expedição</label>
                         <input type="date" id="data_expedicao_licenca" name="data_expedicao_licenca" class="form-control" placeholder="DD/MM/AAAA">              
@@ -122,11 +163,8 @@ $this->title = "SEGOP - Certificado Médito Aeronáutico (CMA)";
                 </div>
             
               <!-- Botão de adicionar, o usuário poderá preencher mais de uma habilitação -->    
-              <script>
-                $("#add-campo").click(function(){
-                    $("#agencia_licenca")clone().appendTo( "<section>");
-                });
-              </script>
+
+                
             
             </section>
 

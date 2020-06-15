@@ -30,9 +30,13 @@ $config = [
         ],
         'assetManager' => [
             'bundles' => [
-                'yii\bootstrap\BootstrapAsset' => [
-                   # 'css' => [],
-                ],
+		    'yii\bootstrap\BootstrapAsset' => [
+			    'css' => ''
+		    ],
+		     'yii\web\JqueryAsset' => [
+                	'js' => [YII_DEBUG ? 'https://code.jquery.com/jquery-1.12.4.min.js' : 'https://code.jquery.com/jquery-1.12.4.min.js'],
+                	'jsOptions' => ['type' => 'text/javascript'],
+            	     ],
             ],
         ],
         'mailer' => [

@@ -29,11 +29,11 @@ $this->title = 'SEGOP';
                                     </div>
                                     <div class="col-md-12 search-col-padding">
                                         <label class="radio-inline">
-                                            <input type="radio" id="inlineRadio1" value="1" name="seguro_viagem"> Seguro
+                                            <input type="radio" id="inlineRadio1" value="1" name="tipo"> Seguro
                                             viagem
                                         </label>
                                         <label class="radio-inline">
-                                            <input type="radio" name="assistencia_viajante" id="inlineRadio2"
+                                            <input type="radio" name="tipo" id="inlineRadio2"
                                                    value="Round Trip"> Assistência ao viajante
                                         </label>
                                     </div>
@@ -337,7 +337,6 @@ $this->registerJs("
     jQuery(function($){
         \"use strict\";
         $.supersized({
-
             //Functionality
             slideshow               :   1,		//Slideshow on/off
             autoplay				:	1,		//Slideshow starts playing automatically
@@ -351,7 +350,6 @@ $this->registerJs("
             keyboard_nav            :   0,		//Keyboard navigation on/off
             performance				:	1,		//0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
             image_protect			:	1,		//Disables image dragging and right click with Javascript
-
             //Size & Position
             min_width		        :   0,		//Min width allowed (in pixels)
             min_height		        :   0,		//Min height allowed (in pixels)
@@ -359,7 +357,6 @@ $this->registerJs("
             horizontal_center       :   1,		//Horizontally center background
             fit_portrait         	:   1,		//Portrait images will not exceed browser height
             fit_landscape			:   0,		//Landscape images will not exceed browser width
-
             //Components
             navigation              :   1,		//Slideshow controls on/off
             thumbnail_navigation    :   1,		//Thumbnail navigation
@@ -370,7 +367,6 @@ $this->registerJs("
                 {image : '/images/2.jpg', title : 'Slide 2'},
                 {image : '/images/3.jpg', title : 'Slide 3'},
             ]
-
         });
     });
 ");

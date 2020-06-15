@@ -31,7 +31,7 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/respond.js',
-        'js/jquery.js',
+        #'js/jquery.js',
         'js/owl.carousel.min.js',
         'js/bootstrap.min.js',
         'js/jquery-ui.min.js',
@@ -43,7 +43,7 @@ class AppAsset extends AssetBundle
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
-        'yii\bootstrap\BootstrapPluginAsset',
+     #   'yii\bootstrap\BootstrapAsset',
+      #  'yii\bootstrap\BootstrapPluginAsset',
     ];
 }

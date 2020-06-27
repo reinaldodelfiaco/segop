@@ -39,19 +39,19 @@ $this->title = 'SEGOP';
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="col-md-6 col-sm-6 search-col-padding">
-                                        <label>Origem</label>
+                                        <label>Origem (Continente)</label>
                                         <div class="input-group">
-                                            <input type="text" name="origem" class="form-control" required
-                                                   placeholder="Ex. Goiânia">
+                                            <select name="origem" class="form-control" required
+                                                   placeholder="Ex. América do Sul">
                                             <span class="input-group-addon"><i
                                                         class="fa fa-map-marker fa-fw"></i></span>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6 search-col-padding">
-                                        <label>Destino</label>
+                                        <label>Destino (Continente)</label>
                                         <div class="input-group">
                                             <input type="text" name="destino" class="form-control" required
-                                                   placeholder="Ex. Porto Alegre">
+                                                   placeholder="Ex. Europa">
                                             <span class="input-group-addon"><i
                                                         class="fa fa-map-marker fa-fw"></i></span>
                                         </div>
